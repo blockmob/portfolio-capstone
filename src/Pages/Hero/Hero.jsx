@@ -18,12 +18,18 @@ const Hero = () => {
             <p className='learntext'>I Learn, grow, and lead.
               I dont just imagine a better
               future- I craft it.</p>
-          <button className='lettalk'>
-            Let’s Talk
-          </button>
+            <button className='lettalk'>
+              Let’s Talk
+            </button>
           </div>
 
 
+        </div>
+<img src='/Images/Hero/checkfil.svg' alt=''/>
+        <div>
+          <p>
+            VALUE PROPOSITION DISCLOSURES AND VISION
+          </p>
         </div>
       </div>
     </div>
