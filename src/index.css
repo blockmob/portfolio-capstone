@@ -80,3 +80,33 @@ h1 {
   src: url('/public/Fonts/NunitoSans-Bold.ttf') format('truetype');
   font-display: swap;
 }
+
+
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('/public/Fonts/Inter_24pt-Medium.ttf') format('truetype');
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Geist-SemiBold';
+  src: url('/public/Fonts/Geist-SemiBold.ttf') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist-Bold';
+  src: url('/public/Fonts/Geist-Bold.ttf') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist-Medium';
+  src: url('/public/Fonts/Geist-Medium.ttf') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/public/Fonts/Geist-Regular.ttf') format('woff2');
+  font-display: swap;
+}
