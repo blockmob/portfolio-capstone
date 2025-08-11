@@ -1,0 +1,348 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+.contactUsContainer {
+  background: #0f0f0f;
+  padding: 100px 80px;
+  display: flex;
+  gap: 40px;
+}
+.contactUs-bg-black {
+  background: #0f0f0f;
+}
+.ContactUs-LeftContainer {
+  width: 563px;
+  display: flex;
+  flex-direction: column;
+}
+.Lets-contact-us {
+  font-family: WorkSans-Italics;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 40px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.ContactUs-LeftContainer h2 {
+  font-family: NunitoSans-Bold;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 100px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.ContactUs-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 677px;
+}
+.ContactUsName {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  font-family: WorkSans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 100%;
+  letter-spacing: 0%;
+  width: 100%;
+  color: #ffffff;
+  width: -webkit-fill-available;
+}
+.ContactUsName::placeholder {
+  font-family: WorkSans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+.ContactUsName:focus {
+  /* border: none; */
+  outline: none;
+}
+.ContactUsMessage {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 110px;
+  resize: none;
+  margin-bottom: 16px !important;
+  overflow-y: scroll; /* keep scrolling enabled */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Edge */
+.ContactUsMessage::-webkit-scrollbar {
+  display: none;
+}
+.CheckBoxSubscription {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+.SubscriptionPara {
+  font-family: WorkSans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+.Send-Message-Button {
+  border: 1px solid;
+  border-image-source: linear-gradient(
+    110.74deg,
+    #666666 -2.81%,
+    rgba(51, 51, 51, 0) 52.02%,
+    #666666 106.86%
+  );
+  background: #ffffff;
+  font-family: WorkSans-Semibold;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #1d1e24;
+  border-radius: 40px;
+  padding: 8px;
+  padding-left: 12px !important;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  width: 182px;
+  cursor: pointer;
+}
+.ArrowIconwithbg {
+  width: 36px;
+  height: 36px;
+}
+.Footer-bottom {
+  padding: 43.06px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.Footer-Logo {
+  width: 175.199951171875px;
+  height: 45.870330810546875px;
+}
+.Social-Platform {
+  display: flex;
+  gap: 10px;
+}
+.Social-Platform img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.ContactUsName:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px inherit inset;
+  -webkit-text-fill-color: inherit;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.footer-bottom-with-bg{
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    background-color: #1d1e24;
+}
+@media (max-width: 1336px) {
+  .contactUsContainer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .Footer-bottom {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 1271px) {
+  .ContactUs-LeftContainer {
+    width: 480px;
+  }
+  .contactUsContainer {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1199px) {
+  .contactUsContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .Footer-bottom {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .contactUsContainer {
+    gap: 60px;
+  }
+  .ContactUs-LeftContainer h2 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .ContactUs-LeftContainer h2 {
+    font-size: 70px;
+  }
+  .contactUsContainer {
+    gap: 40px;
+  }
+  .contactUsContainer {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .Lets-contact-us {
+    font-size: 30px;
+  }
+  .Footer-bottom {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .Footer-Logo {
+    width: 120.199951px;
+    height: 38px;
+  }
+  .Social-Platform img {
+    width: 30px;
+    height: 30px;
+  }
+  .contactUsContainer {
+    flex-direction: column;
+  }
+  .ContactUs-LeftContainer {
+    width: 100%;
+  }
+  .ContactUs-LeftContainer h2 {
+    font-size: 60px;
+  }
+  .GetInTouchBreaklINE {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .ContactUs-LeftContainer h2 {
+    font-size: 50px;
+  }
+  .Lets-contact-us {
+    font-size: 20px;
+  }
+  .contactUsContainer {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .contactUsContainer {
+    gap: 24px;
+  }
+  .Footer-bottom {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .Footer-Logo {
+    width: 100px;
+    height: 30px;
+  }
+  .Social-Platform {
+    gap: 6px;
+  }
+  .Send-Message-Button {
+    font-size: 14px;
+    width: fit-content;
+  }
+  .ArrowIconwithbg {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .ContactUs-LeftContainer h2 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1500px) {
+  .contactUsContainer {
+    padding: 112.5px 90px;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .Lets-contact-us {
+    font-size: 45px;
+  }
+  .ContactUs-LeftContainer h2 {
+    font-size: 112.5px;
+  }
+  .ContactUs-form {
+    max-width: 761.625px;
+    gap: 45px;
+  }
+  .ContactUsName {
+    height: 63px;
+  }
+  .ContactUsMessage {
+    height: 123px;
+  }
+  .SubscriptionPara {
+    font-size: 13.5px;
+  }
+  .CheckBoxSubscription img {
+    width: 18px;
+    height: 18px;
+  }
+  .Send-Message-Button {
+    font-size: 18px;
+    width: 204.75px;
+    justify-content: space-between;
+    padding: 9px;
+    padding-left: 13.5px !important;
+  }
+  .ArrowIconwithbg {
+    width: 40.5px;
+    height: 40.5px;
+  }
+  .Footer-bottom {
+    padding: 48.5px 90px;
+    max-width: 1440px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .Footer-Logo {
+    width: 197.09994506835938px;
+    height: 51.604122161865234px;
+  }
+  .Social-Platform {
+    gap: 11.25px;
+  }
+  .Social-Platform img {
+    width: 45px;
+    height: 45px;
+  }
+}
