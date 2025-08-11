@@ -1,0 +1,135 @@
+/* Container */
+.mid-cards-section {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 24px;
+}
+
+/* Horizontal scroll viewport */
+.cards-viewport {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(280px, 1fr);
+  gap: 28px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  padding: 8px 8px 8px 8px; /* small bleed for shadow */
+  -webkit-overflow-scrolling: touch;
+}
+
+.cards-viewport::-webkit-scrollbar {
+  height: 0; /* hide scrollbar to match clean design */
+}
+
+/* Card */
+.mid-card {
+  box-sizing: border-box ;
+  scroll-snap-align: start;
+  background: #f4f4f4;
+  color: #0a0a0a;
+  border-radius: 18px;
+  padding: 28px;
+  width: 100%;
+  max-width: 308px;
+  min-width: 308px;
+  height: 279px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Icon circle */
+.icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+}
+
+.card-title {
+  font-size: 20px;
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0;
+}
+
+/* Nav controls */
+.nav-controls {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.nav-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  border: 1px solid #e7e7e7;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* Black variant (default active) */
+.nav-btn.is-black {
+  background: #0a0a0a;
+  color: #ffffff;
+  border-color: #0a0a0a;
+}
+
+.nav-btn.is-black:hover {
+  opacity: 0.9;
+}
+
+/* White variant (disabled/at boundary) */
+.nav-btn.is-white {
+  background: #ffffff;
+  color: #0a0a0a;
+}
+
+.nav-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Responsive layout tweaks */
+@media (min-width: 480px) {
+  .cards-viewport {
+    grid-auto-columns: minmax(320px, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .cards-viewport {
+    grid-auto-columns: minmax(360px, 1fr);
+  }
+  .mid-card {
+    padding: 32px;
+    min-height: 200px;
+  }
+  .card-title {
+    font-size: 22px;
+  }
+  .card-description {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-viewport {
+    grid-auto-columns: minmax(380px, 1fr);
+  }
+}
