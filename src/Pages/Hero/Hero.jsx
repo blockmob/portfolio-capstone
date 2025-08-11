@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../Component/Navbar'
+import Navbar from '../../Component/Navbar'
 
 const Hero = () => {
   return (
-    <div>
+    <div className='Hero-Container'>
       <Navbar/>
     </div>
   )
