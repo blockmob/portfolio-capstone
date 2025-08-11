@@ -141,6 +141,10 @@
   width: 36px;
   height: 36px;
 }
+.CheckBoxSubscription img {
+  height: 18px;
+  width: 18px;
+}
 .Footer-bottom {
   padding: 43.06px 80px;
   display: flex;
@@ -164,10 +168,10 @@
   -webkit-text-fill-color: inherit;
   transition: background-color 5000s ease-in-out 0s;
 }
-.footer-bottom-with-bg{
-    border-top: 1px solid #d2d2d2;
-    border-bottom: 1px solid #d2d2d2;
-    background-color: #1d1e24;
+.footer-bottom-with-bg {
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  background-color: #1d1e24;
 }
 @media (max-width: 1336px) {
   .contactUsContainer {

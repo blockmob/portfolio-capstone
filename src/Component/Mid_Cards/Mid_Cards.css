@@ -1,0 +1,113 @@
+/* Container */
+.mid-cards-section {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 24px;
+}
+
+/* Horizontal scroll viewport */
+.cards-viewport {
+display: flex;
+
+  gap: 27px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  padding: 8px 8px 8px 8px; /* small bleed for shadow */
+  -webkit-overflow-scrolling: touch;
+}
+
+.cards-viewport::-webkit-scrollbar {
+  height: 0; /* hide scrollbar to match clean design */
+}
+
+/* Card */
+.mid-card {
+  box-sizing: border-box ;
+  scroll-snap-align: start;
+  background: #f4f4f4;
+  color: #0a0a0a;
+  border-radius: 18px;
+  padding: 24px 24px 43px 24px;
+  width: 100%;
+  max-width: 308px;
+  min-width: 308px;
+  height: 279px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Icon circle */
+.icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  margin-bottom: 52px;
+}
+
+.card-title {
+  font-family: WorkSans-Medium;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 140%;
+  letter-spacing: -2%;
+  margin: 0 0 10px 0;
+  color:#0F0F0F;
+}
+
+.card-description {
+  font-family: WorkSans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: -2%;
+  color: #0F0F0F;
+  margin: 0;
+}
+
+/* Nav controls */
+.nav-controls {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-right: 119px;
+}
+
+
+
+/* Responsive layout tweaks */
+@media (min-width: 480px) {
+  .cards-viewport {
+    grid-auto-columns: minmax(320px, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .cards-viewport {
+    grid-auto-columns: minmax(360px, 1fr);
+  }
+  .mid-card {
+    padding: 32px;
+    min-height: 200px;
+  }
+  .card-title {
+    font-size: 22px;
+  }
+  .card-description {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards-viewport {
+    grid-auto-columns: minmax(380px, 1fr);
+  }
+}

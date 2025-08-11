@@ -1,0 +1,76 @@
+.Hero-Container {
+    padding: 32px 95px 100px;
+}
+
+.card-section {
+    max-width: 237px;
+    display: flex;
+    flex-direction: column;
+    gap: 79px;
+    align-items: end;
+}
+
+.card-section-top {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 11px;
+}
+
+.lettalk {
+    height: 44px;
+    width: 135px;
+    background-color: #0F0F0F;
+    border-radius: 32px;
+    padding: 8px;
+    font-family: Inter-Medium;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.textvis {
+    font-family: WorkSans-Medium;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20.74px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: -2%;
+    text-align: right;
+    margin: 0px !important;
+    color: #1D1E24;
+
+}
+.card-section-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: end;
+}
+
+.learntext {
+    font-family: WorkSans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 130%;
+    letter-spacing: -2%;
+    text-align: right;
+    margin: 0px !important;
+    color: #343434;
+    max-width: 200px;
+}
+
+.card-section-button1 {
+    width: 135px;
+    height: 44px;
+    background-color: #0F0F0F;
+    border-radius: 32px;
+
+}

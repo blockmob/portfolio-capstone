@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: WorkSans, Geist;
   line-height: 1.5;
   font-weight: 400;
 
@@ -13,9 +13,11 @@
   -moz-osx-font-smoothing: grayscale;
 
 }
+
 body {
   
   font-family: "WorkSans", sans-serif;
+  background-color: white;
 }
 * {
   margin: 0 !important;}
@@ -24,6 +26,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -42,10 +45,11 @@ h1 {
 }
 
 @font-face {
-  font-family: "Poppins-SemiBold";
+  font-family: "Geist-SemiBold";
   src: url("/public/Fonts/Geist-SemiBold.ttf") format("woff2");
   font-display: swap;
-} 
+}
+
 @font-face {
    font-family: "WorkSans";
   src: url("/Fonts/Work_Sans/WorkSans-Regular.ttf") format("truetype");
@@ -55,24 +59,35 @@ h1 {
    font-family: "WorkSans-Italics";
   src: url("/public/Fonts/Work_Sans/WorkSans-Italic.ttf") format("truetype");
   font-display: swap;
-} 
+}
+
 @font-face {
    font-family: "WorkSans-Medium";
   src: url("/Fonts/Work_Sans/WorkSans-Medium.ttf") format("truetype");
   font-display: swap;
-} 
+}
+
 @font-face {
    font-family: "WorkSans-Semibold";
   src: url("/Fonts/Work_Sans/WorkSans-SemiBold.ttf") format("truetype");
   font-display: swap;
-} 
+}
+
 @font-face {
    font-family: "WorkSans-Bold";
   src: url("/Fonts/Work_Sans/WorkSans-Bold.ttf") format("truetype");
   font-display: swap;
-} 
+}
+
 @font-face {
    font-family: "NunitoSans-Bold";
   src: url("/Fonts/NunitoSans-Bold.ttf") format("truetype");
   font-display: swap;
-} 
+}
+
+
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("/public/Fonts/Inter_24pt-Medium.ttf") format("truetype");
+  font-display: swap;
+}

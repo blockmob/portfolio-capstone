@@ -6,6 +6,7 @@ const Footer = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubscribed, setIsSubscribed] = useState(false);
   return (
     <footer className="footer-container">
       <div className="contactUs-bg-black">
@@ -39,8 +40,19 @@ const Footer = () => {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
-              <div className="CheckBoxSubscription">
-                <img src="/Images/Faq/Checkbox.svg" alt="checkBox" />
+              <div
+                className="CheckBoxSubscription"
+                onClick={() => setIsSubscribed(!isSubscribed)}
+                style={{ cursor: "pointer" }}
+              >
+                <img
+                  src={
+                    isSubscribed
+                      ? "/Images/Hero/checkfil.svg"
+                      : "/Images/Faq/Checkbox.svg"
+                  }
+                  alt="checkBox"
+                />
                 <p className="SubscriptionPara">
                   I would like to receive the newsletter.
                 </p>
@@ -58,19 +70,19 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom-with-bg">
-      <div className="Footer-bottom">
-        <img
-          src="/Images/Faq/whiteLogo.png"
-          alt="whiteLogo"
-          className="Footer-Logo"
-        />
-        <div className="Social-Platform">
-          <img src="/Images/Faq/facebook.png" alt="faceBook" />
-          <img src="/Images/Faq/X.png" alt="faceBook" />
-          <img src="/Images/Faq/linkedIn.png" alt="faceBook" />
-          <img src="/Images/Faq/insta.png" alt="faceBook" />
+        <div className="Footer-bottom">
+          <img
+            src="/Images/Faq/whiteLogo.png"
+            alt="whiteLogo"
+            className="Footer-Logo"
+          />
+          <div className="Social-Platform">
+            <img src="/Images/Faq/facebook.png" alt="faceBook" />
+            <img src="/Images/Faq/X.png" alt="faceBook" />
+            <img src="/Images/Faq/linkedIn.png" alt="faceBook" />
+            <img src="/Images/Faq/insta.png" alt="faceBook" />
+          </div>
         </div>
-      </div>
       </div>
     </footer>
   );
