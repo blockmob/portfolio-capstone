@@ -101,19 +101,21 @@ const Mid_Cards = () => {
 
   return (
     <section className='mid-cards-section'>
-      <div className='cards-viewport' ref={viewportRef}>
-        {cards.map((row, index) => (
-          <div
-            className='mid-card'
-            key={row.title}
-            ref={el => (cardRefs.current[index] = el)}
-          >
-            <img src={row.Icon} alt={row.title} className='icon-badge' />
-            <p className='card-title'>{row.title}</p>
-            <p className='card-description'>{row.description}</p>
-          </div>
-        ))}
-      </div>
+      {/* <div className='wrapppp'> */}
+        <div className='cards-viewport' ref={viewportRef}>
+          {cards.map((row, index) => (
+            <div
+              className='mid-card'
+              key={row.title}
+              ref={el => (cardRefs.current[index] = el)}
+            >
+              <img src={row.Icon} alt={row.title} className='icon-badge' />
+              <p className='card-title'>{row.title}</p>
+              <p className='card-description'>{row.description}</p>
+            </div>
+          ))}
+        </div>
+      {/* </div> */}
 
       <div className='nav-controls'>
         <img
@@ -121,12 +123,14 @@ const Mid_Cards = () => {
           alt='left'
           onClick={() => handleNav('left')}
           disabled={atStart}
+          className='srttjy'
         />
 
         <img
           src='/Images/midsection/arrowright.svg'
           alt='right'
           onClick={() => handleNav('right')}
+          className='srttjy'
         />
       </div>
     </section>

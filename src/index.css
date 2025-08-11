@@ -5,15 +5,23 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: white;
+  width: 100%;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html,
+body,
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
 body {
-  font-family: "WorkSans", sans-serif;
+  font-family: 'WorkSans', sans-serif;
 }
 
 a {
@@ -26,6 +34,7 @@ a:hover {
 }
 
 body {
+  width: 100%;
   margin: 0;
   display: flex;
   place-items: center;
@@ -39,32 +48,32 @@ h1 {
 }
 
 @font-face {
-  font-family: "Poppins-SemiBold";
-  src: url("/public/Fonts/Geist-SemiBold.ttf") format("woff2");
+  font-family: 'Poppins-SemiBold';
+  src: url('/public/Fonts/Geist-SemiBold.ttf') format('woff2');
   font-display: swap;
-} 
+}
 @font-face {
-   font-family: "WorkSans";
-  src: url("/public/Fonts/Work_Sans/WorkSans-Regular.ttf") format("truetype");
+  font-family: 'WorkSans';
+  src: url('/public/Fonts/Work_Sans/WorkSans-Regular.ttf') format('truetype');
   font-display: swap;
-} 
+}
 @font-face {
-   font-family: "WorkSans-Medium";
-  src: url("/public/Fonts/Work_Sans/WorkSans-Medium.ttf") format("truetype");
+  font-family: 'WorkSans-Medium';
+  src: url('/public/Fonts/Work_Sans/WorkSans-Medium.ttf') format('truetype');
   font-display: swap;
-} 
+}
 @font-face {
-   font-family: "WorkSans-Semibold";
-  src: url("/public/Fonts/Work_Sans/WorkSans-SemiBold.ttf") format("truetype");
+  font-family: 'WorkSans-Semibold';
+  src: url('/public/Fonts/Work_Sans/WorkSans-SemiBold.ttf') format('truetype');
   font-display: swap;
-} 
+}
 @font-face {
-   font-family: "WorkSans-Bold";
-  src: url("/public/Fonts/Work_Sans/WorkSans-Bold.ttf") format("truetype");
+  font-family: 'WorkSans-Bold';
+  src: url('/public/Fonts/Work_Sans/WorkSans-Bold.ttf') format('truetype');
   font-display: swap;
-} 
+}
 @font-face {
-   font-family: "NunitoSans-Bold";
-  src: url("/public/Fonts/NunitoSans-Bold.ttf") format("truetype");
+  font-family: 'NunitoSans-Bold';
+  src: url('/public/Fonts/NunitoSans-Bold.ttf') format('truetype');
   font-display: swap;
-} 
+}

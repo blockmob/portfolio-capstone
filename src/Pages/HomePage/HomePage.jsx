@@ -4,7 +4,7 @@ import Innovation from '../../Component/Innovation/Innovation'
 
 const HomePage = () => {
   return (
-    <div>
+    <div style={{width:"100%",background:"white",maxWidth:"1920px"}}>
       <Mid_Cards />
       <Innovation/>
     </div>
