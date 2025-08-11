@@ -2,7 +2,7 @@
   background: #0f0f0f;
   border-radius: 36px;
   padding: 49px 100px 127px 90px;
-  margin-top: 280px;
+  margin-top: 280px !important;
   /* max-width: 1200px; */
 }
 .homeimagediv {
@@ -12,7 +12,7 @@
 .homeimage {
   max-width: 553px;
   height: 479px;
-  margin-top: -318px;
+  margin-top: -318px !important;
 }
 .innovation-header {
   display: flex;
@@ -50,7 +50,7 @@
   text-align: right;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 12px;
+  margin-bottom: 12px !important;
 }
 
 .innovation-main-title {
@@ -64,7 +64,7 @@
   text-transform: uppercase;
   color: #ffffff;
   max-width: 620px;
-  margin: 40px 0px 87px 0px;
+  margin: 40px 0px 87px 0px !important;
   /* margin: 0 0 0.5em 0; */
 }
 
@@ -85,14 +85,14 @@
   letter-spacing: 1px;
   color: #ffffff;
   max-width: 489px;
-  margin: 0px;
+  margin: 0px !important;
 }
 
 .innovation-content {
   display: flex;
   gap: 48px;
   justify-content: space-between;
-  margin-top: -101px;
+  margin-top: -101px !important;
 }
 
 .innovation-left-column {
@@ -124,7 +124,7 @@
   width: 48px;
   height: 48px;
   object-fit: contain;
-  margin-right: 8px;
+  margin-right: 8px !important;
 }
 .capstone-block {
   flex-direction: column;
@@ -166,8 +166,8 @@
   line-height: 140%;
   letter-spacing: 0.4px;
   color: #ffffff;
-  margin: 0px;
-  margin-bottom: 12px;
+  margin: 0px !important;
+  margin-bottom: 12px !important;
 }
 
 .venture-description {
@@ -179,8 +179,8 @@
   line-height: 150%;
   letter-spacing: -0.32px;
   color: #ffffff;
-  margin: 0px;
-  margin-bottom: 12px;
+  margin: 0px !important;
+  margin-bottom: 12px !important;
 }
 
 .venture-quote {
@@ -192,12 +192,12 @@
   line-height: 150%;
   letter-spacing: -0.3px;
   color: #ffffff;
-  margin: 0px;
-  margin-top: 0.5em;
+  margin: 0px !important;
+  margin-top: 0.5em !important;
 }
 
 .venture-features {
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 0px 10px !important;
   padding: 0;
   font-family: WorkSans;
   font-weight: 400;
@@ -244,7 +244,7 @@
   .homeimage {
     width: 622.125px;
     height: 538.875px;
-    margin-top: -350px;
+    margin-top: -350px !important;
   }
 }
 @media (max-width: 1340px) {
@@ -269,13 +269,13 @@
   .homeimage {
     max-width: 457px;
     height: 424px;
-    margin-top: -289px;
+    margin-top: -289px !important;
   }
   .innovation-section {
     background: #0f0f0f;
     border-radius: 36px;
     padding: 49px 70px 110px 70px;
-    margin-top: 280px;
+    margin-top: 280px !important;
   }
 }
 @media (max-width: 1110px) {
@@ -306,14 +306,14 @@
   .homeimage {
     max-width: 380px;
     height: 369px;
-    margin-top: -251px;
-    margin-bottom: 15px;
+    margin-top: -251px !important;
+    margin-bottom: 15px !important;
   }
   .innovation-section {
     background: #0f0f0f;
     border-radius: 36px;
     padding: 49px 50px 90px 50px;
-    margin-top: 200px;
+    margin-top: 200px !important;
   }
 }
 @media (max-width: 768px) {
@@ -333,7 +333,7 @@
     display: none;
   }
   .beforeleft{
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
     display: unset;
   }
   .innovation-content {
@@ -344,16 +344,16 @@
     gap: 36px;
 }
   .innovation-main-title {
-    margin: 25px 0px 0px 0px;
+    margin: 25px 0px 0px 0px !important;
   }
   .innovation-header-left {
-    margin-top: 30px;
+    margin-top: 30px !important;
   }
   .homeimage {
     max-width: 320px;
     height: 289px;
-    margin-top: -210px;
-    margin-bottom: 15px;
+    margin-top: -210px !important;
+    margin-bottom: 15px !important;
   }
   .innovation-right-column {
     justify-content: flex-start;
@@ -379,7 +379,7 @@
   .innovation-main-title {
     font-size: 30px;
     max-width: 620px;
-    margin: 25px 0px 0px 0px;
+    margin: 25px 0px 0px 0px !important;
   }
   .innovation-header-description {
     font-size: 12.25px;
@@ -395,14 +395,14 @@
   .homeimage {
     max-width: 277px;
     height: 257px;
-    margin-top: -192px;
-    margin-bottom: 15px;
+    margin-top: -192px !important;
+    margin-bottom: 15px !important;
 }
   .innovation-section {
     background: #0f0f0f;
     border-radius: 20px;
     padding: 49px 35px 40px 35px;
-    margin-top: 150px;
+    margin-top: 150px !important;
   }
 }
 @media (max-width: 399px) {
@@ -426,19 +426,19 @@
     max-width: 620px;
     line-height: 23px;
     letter-spacing: -0.1px;
-    margin: 25px 0px 0px 0px;
+    margin: 25px 0px 0px 0px !important;
   }
  
   .homeimage {
     max-width: 180px;
     height: 160px;
-    margin-top: -139px;
-    margin-bottom: 15px;
+    margin-top: -139px !important;
+    margin-bottom: 15px !important;
 }
   .innovation-section {
     background: #0f0f0f;
     border-radius: 20px;
     padding: 49px 30px 35px 30px;
-    margin-top: 100px;
+    margin-top: 100px !important;
   }
 }

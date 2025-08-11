@@ -4,6 +4,7 @@ import Innovation from '../../Component/Innovation/Innovation'
 import Hero from '../Hero/Hero'
 import Faq from '../Faq/Faq'
 import About from '../About/About'
+import Awards from '../../Component/Awards/Awards'
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <About/>
       <Mid_Cards />
       <Innovation/>
+      <Awards/>
       <Faq/>
     </div>
   )
