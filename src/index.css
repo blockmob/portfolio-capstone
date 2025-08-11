@@ -57,7 +57,7 @@ h1 {
 } 
 @font-face {
    font-family: "WorkSans-Italics";
-  src: url("/public/Fonts/Work_Sans/WorkSans-Italic.ttf") format("truetype");
+  src: url("/Fonts/Work_Sans/WorkSans-Italic.ttf") format("truetype");
   font-display: swap;
 }
 
