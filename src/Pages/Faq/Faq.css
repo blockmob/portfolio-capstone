@@ -1,0 +1,41 @@
+.MainContainerFaq {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  gap: 113px;
+  padding-top: 221px;
+  padding-bottom: 172px;
+}
+.Faq-left-containe {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.Faq-heading-section-part {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.FaqsectionPart {
+  font-family: WorkSans-Medium;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 100%;
+  letter-spacing: -3%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #1d1e24;
+}
+.faqSectionheading {
+  font-family: WorkSans-Medium;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 100%;
+  letter-spacing: -3%;
+  text-transform: uppercase;
+  color: #1d1e24;
+}
