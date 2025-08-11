@@ -12,6 +12,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+body {
+  font-family: "WorkSans", sans-serif;
+}
 
 a {
   font-weight: 500;
@@ -38,5 +41,30 @@ h1 {
 @font-face {
   font-family: "Poppins-SemiBold";
   src: url("/public/Fonts/Geist-SemiBold.ttf") format("woff2");
+  font-display: swap;
+} 
+@font-face {
+   font-family: "WorkSans";
+  src: url("/public/Fonts/Work_Sans/WorkSans-Regular.ttf") format("truetype");
+  font-display: swap;
+} 
+@font-face {
+   font-family: "WorkSans-Medium";
+  src: url("/public/Fonts/Work_Sans/WorkSans-Medium.ttf") format("truetype");
+  font-display: swap;
+} 
+@font-face {
+   font-family: "WorkSans-Semibold";
+  src: url("/public/Fonts/Work_Sans/WorkSans-SemiBold.ttf") format("truetype");
+  font-display: swap;
+} 
+@font-face {
+   font-family: "WorkSans-Bold";
+  src: url("/public/Fonts/Work_Sans/WorkSans-Bold.ttf") format("truetype");
+  font-display: swap;
+} 
+@font-face {
+   font-family: "NunitoSans-Bold";
+  src: url("/public/Fonts/NunitoSans-Bold.ttf") format("truetype");
   font-display: swap;
 } 
