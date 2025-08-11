@@ -48,7 +48,7 @@ const Footer = () => {
                 <img
                   src={
                     isSubscribed
-                      ? "/Images/Hero/checkfil.svg"
+                      ? "/Images/Faq/checkFill.svg"
                       : "/Images/Faq/Checkbox.svg"
                   }
                   alt="checkBox"
