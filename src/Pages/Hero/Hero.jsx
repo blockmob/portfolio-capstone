@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className='Hero-Container'>
       <Navbar />
-      <div>
+      <div className='MainHeroDiv'>
         <div className="card-section">
           <div className="card-section-top">
             <p className='textvis'>Visionary Leadership</p>
@@ -25,13 +25,19 @@ const Hero = () => {
 
 
         </div>
-<img src='/Images/Hero/checkfil.svg' alt=''/>
-        <div>
-          <p>
-            VALUE PROPOSITION DISCLOSURES AND VISION
+
+        <div className='valuediv'>
+          <p className='valuetext'>
+            Value Proposition Disclosures and Vision
           </p>
+            <p className='valuetextdet'>
+          I’m Abdullah, a business leader, strategist, and transformation advisor with a focus on building scalable, future-ready organizations across technology and finance.
+          </p>
+          <p className='text2025'>© 2025</p>
         </div>
       </div>
+      <img src='/Images/Hero/Abdullah.webp' className='MainPicPerson' alt=''/>
+      <img src='/Images/Hero/TitlePic.png' className='titlePerson' alt=''/>
     </div>
   )
 }
