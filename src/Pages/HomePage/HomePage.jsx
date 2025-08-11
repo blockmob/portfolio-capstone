@@ -7,6 +7,7 @@ import Faq from '../Faq/Faq'
 const HomePage = () => {
   return (
     <div style={{width:"100%",background:"white",maxWidth:"1920px"}}>
+      <Hero/>
       <Mid_Cards />
       <Innovation/>
       <Faq/>

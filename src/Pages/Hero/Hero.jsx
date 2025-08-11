@@ -33,7 +33,7 @@ const Hero = () => {
             <p className='valuetextdet'>
           I’m Abdullah, a business leader, strategist, and transformation advisor with a focus on building scalable, future-ready organizations across technology and finance.
           </p>
-          <p className='text2025'>© 2025</p>
+          <p className='textyear'>© 2025</p>
         </div>
       </div>
       <img src='/Images/Hero/Abdullah.webp' className='MainPicPerson' alt=''/>
