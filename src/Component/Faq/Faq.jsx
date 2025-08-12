@@ -37,9 +37,9 @@ const Faq = () => {
     <>
     <div className="MainContainerFaq">
       <div className="Faq-left-container">
-        <div className="Faq-heading-section-part">
-          <p className="FaqsectionPart">07/</p>
-          <p className="faqSectionheading">FaQ</p>
+        <div className="aboutdiv">
+          <p className="about-section-number">08/</p>
+          <p className="about-section-number">FaQ</p>
         </div>
         <p className="awards-title  fadshfdhsfh">
           Discover

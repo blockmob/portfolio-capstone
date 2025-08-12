@@ -5,10 +5,9 @@ const Awards = () => {
   return (
     <div className='awards-container'>
       <div className='awards-header'>
-        <div className='awards-label'>
-          <span className='awards-number'>05/</span>
-          <br />
-          <span className='awards-subtitle'>RECOGNITIONS</span>
+        <div className="aboutdiv">
+          <p className="about-section-number">05/</p>
+          <p className="about-section-number">Recognitions</p>
         </div>
         <p className='awards-title'>
           AWARDS &<br /> DISTINCTIONS

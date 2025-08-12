@@ -102,10 +102,9 @@ const Mid_Cards = () => {
   return (
     <section className='mid-cards-section'>
       <div className='fdhdsf'>
-        <div className='awards-label'>
-          <span className='awards-number'>02/</span>
-          <br />
-          <span className='awards-subtitle'>What i do</span>
+        <div className="aboutdiv">
+          <p className="about-section-number">02/</p>
+          <p className="about-section-number">What i do</p>
         </div>
         <p
           className='innovation-header-description hdsdhfhdfhf'

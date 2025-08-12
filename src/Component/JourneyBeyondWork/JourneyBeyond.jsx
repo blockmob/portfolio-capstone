@@ -5,8 +5,15 @@ const JourneyBeyondWork = () => {
   return (
     <div className="Section6MainContainer">
       <div className="JourneyBeyongWorkContainer">
-        <p className="JourneySectionNumber">06/</p>
-        <p className="BeyondWorkOriginalSection">Beyond work</p>
+        <div className="aboutdiv"
+        style={{justifyContent: "center", alignItems: "center"}}
+        >
+          <p className="about-section-number"
+          style={{color:"#FFFFFF"}}
+          >07/</p>
+          <p className="about-section-number"
+              style={{color:"#FFFFFF"}}>Beyond work</p>
+        </div>
         <div className="BeyondWorkBottomContainer">
           <h2>
             Journeys Beyond <br /> Business

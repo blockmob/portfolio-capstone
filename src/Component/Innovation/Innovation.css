@@ -260,8 +260,9 @@
     max-width: 620px;
   }
   .innovation-header-description {
-    font-size: 16.25px;
+    font-size: 16px;
     max-width: 404px;
+      line-height: 150%;
   }
   .venture-block h2 {
     font-size: 18.5px;
@@ -320,17 +321,17 @@
   }
 }
 @media (max-width: 768px) {
-  .venture-description {
+  /* .venture-description {
     text-align: center;
-  }
+  } */
   .venture-block {
     max-width: unset;
-    gap: 14px;
-    align-items: center;
+    gap: 10px;
+  
   }
-  .venture-block h2 {
+  /* .venture-block h2 {
     text-align: center;
-  }
+  } */
   .logoosss1{
     width: 120px;
   }
@@ -357,10 +358,10 @@
 }
   .innovation-main-title {
     margin: 25px 0px 0px 0px !important;
-    text-align: center;
+    /* text-align: center; */
   }
   .innovation-header-description {
-    text-align: center;
+    text-align: start;
     max-width: unset;
   }
   .innovation-header-left {
@@ -384,7 +385,7 @@
     font-size: 11px;
   }
   .innovation-left-column {
-    gap: 30px;
+    gap: 35px;
   }
   .gshgdsghadks {
     gap: 30px;
