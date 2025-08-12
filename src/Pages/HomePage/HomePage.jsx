@@ -4,6 +4,8 @@ import Innovation from '../../Component/Innovation/Innovation'
 import Awards from '../../Component/Awards/Awards'
 import JourneyBeyondWork from '../../Component/JourneyBeyondWork/JourneyBeyond'
 import Faq from '../../Component/Faq/Faq'
+import Hero from '../Hero/Hero'
+import About from '../About/About'
 const HomePage = () => {
   return (
     <div style={{ width: "100%", background: "white", maxWidth: "1920px" }}>

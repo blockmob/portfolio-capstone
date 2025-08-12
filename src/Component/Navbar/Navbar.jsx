@@ -59,14 +59,14 @@ export default function Navbar() {
         boxShadow: "none",
         display: "flex",
         justifyContent: "center",
-        alignItems: "center",
+        alignItems:window.innerWidth < 900 ?"end": "center",
         p: 0,
         m: 0,
       }}
     >
       <div
         style={{
-          backgroundColor: "#0F0F0F",
+          backgroundColor: window.innerWidth < 900 ?"transparent": "#0F0F0F",
           borderRadius: "100px",
           display: "flex",
           justifyContent: "center",
@@ -76,7 +76,7 @@ export default function Navbar() {
           position: "relative",
           overflow: "hidden",
         }}
-          className="slidingdivtop"
+        className="slidingdivtop"
       >
         {/* Sliding Highlight */}
         <div
@@ -127,7 +127,7 @@ export default function Navbar() {
               >
                 {/* Only show icon if page is active */}
                 {activePage === page && (
-                  <img src={pageIcons[page]} alt={`${page} icon`} className="iconpage"/>
+                  <img src={pageIcons[page]} alt={`${page} icon`} className="iconpage" />
                 )}
 
                 <p
@@ -144,69 +144,68 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-      {/* Mobile Menu Button */}
-<div
-  style={{
-    display: window.innerWidth < 900 ? "flex" : "none",
-    alignItems: "center",
-    justifyContent: "flex-end", // push to right side
-    flex: 1,
-  }}
->
-  <IconButton
+        <div
+          style={{
+            display: window.innerWidth < 900 ? "flex" : "none",
+            alignItems: "center",
+            justifyContent: "flex-start", // align left
+            width: "100%",
+          }}
+        >
+           <IconButton
     onClick={handleMenuOpen}
     sx={{
-      color: "#fff", // icon color
-      p: 0, // remove padding for no circle
-      background: "none", // no background
-      "&:hover": {
-        background: "none", // no hover circle
-      },
+      color: "#000", // black icon
+      padding: 0,
+      "&:hover": { backgroundColor: "transparent" },
     }}
-  >
-    <MenuIcon />
-  </IconButton>
-  <Menu
-    anchorEl={anchorEl}
-    open={Boolean(anchorEl)}
-    onClose={handleMenuClose}
-    PaperProps={{
-      sx: {
-        bgcolor: "#0F0F0F",
-        width: "100%",
-      },
-    }}
-  >
-    {pages.map((page) => (
-      <MenuItem
-        key={page}
-        selected={page === activePage}
-        onClick={() => handlePageClick(page)}
-        sx={{
-          bgcolor: page === activePage ? "#fff" : "transparent",
-          color: page === activePage ? "#0F0F0F" : "#fff",
-          "&.Mui-selected": {
-            bgcolor: "#fff",
-            color: "#0F0F0F",
-          },
-          "&.Mui-selected:hover": {
-            bgcolor: "#fff",
-          },
-        }}
-      >
-        {activePage === page && (
-          <img
-            src={pageIcons[page]}
-            alt={`${page} icon`}
-            style={{ width: 18, marginRight: 8 }}
-          />
-        )}
-        {page}
-      </MenuItem>
-    ))}
-  </Menu>
-</div>
+  > 
+            <MenuIcon />
+          </IconButton>
 
+          <Menu
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={handleMenuClose}
+            PaperProps={{
+              sx: {
+                bgcolor: "#0F0F0F",
+                width: "100%",
+
+              },
+            }}
+          >
+            {pages.map((page) => (
+              <MenuItem
+                key={page}
+                selected={page === activePage}
+                onClick={() => handlePageClick(page)}
+                sx={{
+
+                  bgcolor: page === activePage ? "#fff" : "transparent",
+                  color: page === activePage ? "#0F0F0F" : "#fff",
+                  "&.Mui-selected": {
+                    bgcolor: "#fff",
+                    color: "#0F0F0F",
+                  },
+                  "&.Mui-selected:hover": {
+                    bgcolor: "#fff",
+                  },
+                }}
+              >
+                {activePage === page && (
+                  <img
+                    src={pageIcons[page]}
+                    alt={`${page} icon`}
+                    style={{ width: 18, marginRight: 8 }}
+                  />
+                )}
+                {page}
+              </MenuItem>
+            ))}
+          </Menu>
+
+        </div>
       </div>
     </AppBar>
   );
