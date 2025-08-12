@@ -45,6 +45,7 @@ body {
   width: 100%;
   margin: 0;
   display: flex;
+  overflow-x: hidden !important;
   place-items: center;
   /* min-width: 320px; */
   /* min-height: 100vh;  */
@@ -133,4 +134,9 @@ h1 {
 .HomePageContainerNewwww {
   margin-left: auto !important;
   margin-right: auto !important;
+}
+
+button:hover {
+     transition: all 0.3s ease;
+  transform: translateY(-2px) scale(1.02);
 }

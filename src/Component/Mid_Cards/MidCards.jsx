@@ -102,13 +102,14 @@ const Mid_Cards = () => {
   return (
     <section className='mid-cards-section'>
       <div className='fdhdsf'>
-        <div className="aboutdiv">
+        <div className="aboutdiv" data-aos="fade-right" >
           <p className="about-section-number">02/</p>
           <p className="about-section-number">What i do</p>
         </div>
         <p
           className='innovation-header-description hdsdhfhdfhf'
           style={{ fontFamily: 'Geist', color: '#0F0F0F' }}
+          data-aos="fade-left" 
         >
           With experience in my field, I can tackle challenges and provide
           solutions. My skills enhance my problem-solving and make me a valuable
@@ -119,6 +120,7 @@ const Mid_Cards = () => {
       <div className='cards-viewport' ref={viewportRef}>
         {cards.map((row, index) => (
           <div
+          data-aos="fade-left" data-aos-delay="500"
             className='mid-card'
             key={row.title}
             ref={el => (cardRefs.current[index] = el)}

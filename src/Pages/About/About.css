@@ -143,6 +143,10 @@
   .about-left-text {
     font-size: 18px;
   }
+  .arrowicon{
+    height: 24px;
+    width: 24px;
+  }
 }
 
 @media (max-width:1300px) {
@@ -222,7 +226,7 @@
   .about-section {
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 70px;
+    padding-top: 0px;
   }
 
 

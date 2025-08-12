@@ -86,6 +86,9 @@
   color: #0f0f0f;
   margin: 0 !important;
 }
+  .srttjy {
+    cursor: pointer;
+  }
 
 /* Nav controls */
 .nav-controls {

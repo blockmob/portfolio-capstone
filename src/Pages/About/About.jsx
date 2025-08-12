@@ -40,14 +40,14 @@ function About() {
   }, []);
 
   return (
-    <section className="about-section">
+    <section className="about-section" id='About'>
       {/* Left Section */}
       <div className="about-left">
-        <div className="aboutdiv">
+        <div className="aboutdiv" data-aos="fade-right">
           <p className="about-section-number">01/</p>
           <p className="about-section-number">ABOUT ME</p>
         </div>
-        <p className="about-left-text">
+        <p className="about-left-text" data-aos="fade-right">
           Currently, I serve as CEO of <span className="bold">CapstoneTG.io</span>,
           where we lead transformational digital initiatives. I’m also the co-founder
           of <span className="bold">Gaya Wallet</span> and <span className="bold">Gaya Blockchain</span>,
@@ -56,7 +56,7 @@ function About() {
       </div>
 
       {/* Right Section */}
-      <div className="about-right">
+      <div className="about-right" data-aos="fade-left">
         <div className="about-line"></div>
         <p ref={textRef} className="about-right-text-new">
           I'm a business leader with over a decade of experience in launching, scaling,

@@ -2,11 +2,11 @@ import React from 'react'
 import './Innovation.css'
 const Innovation = () => {
   return (
-    <div className='innovation-section'>
+    <div className='innovation-section' id='Ventures'>
       <div className='homeimagediv'>
         <img
           src='/Images/midsection/image_1_1_4x.webp'
-          className='homeimage'
+          className='homeimage swing-image'
           alt=''
         />
       </div>
@@ -33,7 +33,9 @@ const Innovation = () => {
         </div> */}
         <div className='innovation-content'>
           <div className='innovation-left-column'>
-            <div className='innovation-header-left'>
+            <div className='innovation-header-left'
+            data-aos="fade-left"
+            >
               <span className='innovation-section-number'>04/</span>
               <br />
               <span className='innovation-section-title'>VENTURES</span>
@@ -43,7 +45,7 @@ const Innovation = () => {
                 THROUGH EXPERIENCE
               </p>
             </div>
-            <div className='innovation-header-right beforeleft'>
+            <div className='innovation-header-right beforeleft'  data-aos="fade-down">
               <p className='innovation-header-description'>
                 I build and lead ventures that drive digital transformation—from
                 Capstone Blockchain and the GAYA ecosystem to Gaya
@@ -51,13 +53,13 @@ const Innovation = () => {
                 users, businesses, and governments.
               </p>
             </div>
-            <div className='venture-block capstone-block'>
+            <div className='venture-block capstone-block' data-aos="fade-down">
               <img
                 src='/Images/midsection/capstonelogo.svg'
                 alt='Capstone Logo'
                 className='logoosss'
               />
-              <div>
+              <div data-aos="fade-down">
                 <h2>Capstone Blockchain DMCC</h2>
                 <p className='venture-description'>
                   A transformation engine at the intersection of strategy,
@@ -72,7 +74,7 @@ const Innovation = () => {
                 </p>
               </div>
             </div>
-            <div className='venture-block gaya-wallet-block'>
+            <div className='venture-block gaya-wallet-block' data-aos="fade-down">
               <img src='/Images/midsection/gw.svg' alt='Capstone Logo' className='logoosss1' />
               <div>
                 <h2>Gaya Wallet</h2>
@@ -89,7 +91,7 @@ const Innovation = () => {
                 </ul>
               </div>
             </div>
-            <div className='venture-block dr3-block'>
+            <div className='venture-block dr3-block' data-aos="fade-down">
               <img src='/Images/midsection/dr3.svg' alt='Capstone Logo' className='logoosss1' />
               <div>
                 <h2>DR3</h2>
@@ -109,7 +111,7 @@ const Innovation = () => {
           </div>
           <div className='innovation-right-column'>
             <div className='gshgdsghadks'>
-              <div className='innovation-header-right'>
+              <div className='innovation-header-right' data-aos="fade-down">
                 <p className='innovation-header-description'>
                   I build and lead ventures that drive digital
                   transformation—from Capstone Blockchain and the GAYA ecosystem
@@ -117,7 +119,7 @@ const Innovation = () => {
                   solutions for users, businesses, and governments.
                 </p>
               </div>
-              <div className='venture-block gaya-blockchain-block'>
+              <div className='venture-block gaya-blockchain-block' data-aos="fade-down">
                 <img src='/Images/midsection/gb.svg' alt='Capstone Logo' className='logoosss' />
                 <div>
                   <h2>Gaya Blockchain</h2>
@@ -129,7 +131,7 @@ const Innovation = () => {
                   </p>
                 </div>
               </div>
-              <div className='venture-block city-crafters-block'>
+              <div className='venture-block city-crafters-block' data-aos="fade-down">
                 <img src='/Images/midsection/cc.svg' alt='Capstone Logo' className='logoosss' />
                 <div>
                   <h2>City Crafters</h2>

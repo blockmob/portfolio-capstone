@@ -4,7 +4,8 @@ import "./JourneyBeyond.css";
 const JourneyBeyondWork = () => {
   return (
     <div className="Section6MainContainer">
-      <div className="JourneyBeyongWorkContainer">
+      <div className="JourneyBeyongWorkContainer" data-aos="fade-up"
+     data-aos-duration="1500">
         <div className="aboutdiv"
         style={{justifyContent: "center", alignItems: "center"}}
         >
