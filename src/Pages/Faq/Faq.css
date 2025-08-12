@@ -50,7 +50,7 @@
 }
 
 .Faq-left-container h2 {
-  color: #1D1E24;
+  color: #1d1e24;
   font-family: NunitoSans-Bold;
   font-weight: 700;
   font-style: Bold;
@@ -198,6 +198,7 @@
 @media (max-width: 768px) {
   .Faq-left-container h2 {
     font-size: 36px;
+    text-align: center;
   }
 
   .MainContainerFaq {
@@ -211,6 +212,23 @@
     height: 24px;
     width: 24px;
   }
+  .Faq-left-container {
+    align-items: center;
+    gap: 24px;
+  }
+  .Faq-heading-section-part {
+    align-items: center;
+    gap: 10px;
+  }
+  .FaqsectionPart {
+    font-size: 16px;
+  }
+  .faqSectionheading {
+    font-size: 16px;
+  }
+  .Faq-right-container {
+    margin-top: 00px !important;
+  }
 }
 
 @media (max-width: 550px) {
@@ -221,7 +239,12 @@
   .Faq-left-container h2 {
     font-size: 32px;
   }
-
+   .FaqsectionPart {
+    font-size: 14px;
+  }
+  .faqSectionheading {
+    font-size: 14px;
+  }
   .MainContainerFaq {
     padding-left: 24px;
     padding-right: 24px;
