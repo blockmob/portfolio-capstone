@@ -21,11 +21,11 @@
 .MainPicPerson {
     width: 949px;
     height: auto;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+    position: absolute !important;
+    bottom: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 2 !important;
 }
 
 .titlePerson {
@@ -580,8 +580,21 @@
         padding: 15px 20px 120px;
     }
 
+ .MainPicPerson {
+     bottom: unset !important;
+     top: 30px !important;
 
-
+     
+    }
+.MainHeroDiv{
+    padding-top:400px ;
+}
+.card-section{
+    margin-bottom: 0px !important;
+}
+.titlePerson{
+    top: 295px;
+}
     .learntext {
         max-width: unset;
     }
@@ -590,23 +603,39 @@
 @media (max-width:400px) {
     .MainPicPerson {
         width: 100%;
+     
     }
-
+ .MainHeroDiv {
+        padding-top: 380px;
+    }
 }
 
 @media (max-width:380px) {
-
+   
     .card-section {
         gap: 20px;
-        margin-bottom: 180px !important;
+        /* margin-bottom: 180px !important; */
         flex-direction: column;
+    }
+        .titlePerson {
+        top: 277px;
+    }
+     .MainHeroDiv {
+        padding-top: 350px;
     }
 }
 
 @media (max-width:350px) {
-    .card-section {
+    /* .card-section {
 
         margin-bottom: 150px !important;
 
+    } */
+
+           .titlePerson {
+        top: 255px;
     }
-}
+     .MainHeroDiv {
+        padding-top: 320px;
+    }
+} 

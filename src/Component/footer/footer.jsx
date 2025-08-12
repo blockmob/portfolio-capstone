@@ -8,17 +8,17 @@ const Footer = () => {
   const [message, setMessage] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
   return (
-    <footer className="footer-container">
+    <footer className="footer-container" id="Contact">
       <div className="contactUs-bg-black">
         <div className="contactUsContainer">
-          <div className="ContactUs-LeftContainer">
+          <div className="ContactUs-LeftContainer" data-aos="fade-right">
             <p className="Lets-contact-us">Lets</p>
             <h2>
               get in
               <br className="GetInTouchBreaklINE" /> touch
             </h2>{" "}
           </div>
-          <div className="ContactUs-form">
+          <div className="ContactUs-form" data-aos="fade-left">
             <div style={{ width: "100%" }}>
               <input
                 type="text"
@@ -70,13 +70,13 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom-with-bg">
-        <div className="Footer-bottom">
+        <div className="Footer-bottom" data-aos="fade-right">
           <img
             src="/Images/Faq/whiteLogo.png"
             alt="whiteLogo"
             className="Footer-Logo"
           />
-          <div className="Social-Platform">
+          <div className="Social-Platform" >
             <img src="/Images/Faq/facebook.png" alt="faceBook" />
             <img src="/Images/Faq/X.png" alt="faceBook" />
             <img src="/Images/Faq/linkedIn.png" alt="faceBook" />

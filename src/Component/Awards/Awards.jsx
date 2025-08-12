@@ -4,8 +4,8 @@ import './Awards.css'
 const Awards = () => {
   return (
     <div className='awards-container' id='Recognitions'>
-      <div className='awards-header'>
-        <div className="aboutdiv">
+      <div className='awards-header' data-aos="fade-down">
+        <div className="aboutdiv" >
           <p className="about-section-number">05/</p>
           <p className="about-section-number">Recognitions</p>
         </div>
@@ -15,7 +15,7 @@ const Awards = () => {
       </div>
 
       <div className='awards-grid'>
-        <div className='award-box award-box-light'>
+        <div className='award-box award-box-light' data-aos="zoom-in">
           <h3 className='award-title'>Most Outstanding Member - JCI Syria</h3>
           <p className='award-description'>
             Recognized for exceptional leadership, initiative, and service
@@ -24,7 +24,7 @@ const Awards = () => {
           </p>
         </div>
 
-        <div className='award-box award-box-light'>
+        <div className='award-box award-box-light' data-aos="zoom-in">
           <h3 className='award-title'>
             Best Local New Member - Junior Chamber International, Hama
           </h3>
@@ -35,19 +35,19 @@ const Awards = () => {
           </p>
         </div>
 
-        <div className='award-box award-box-light'>
+        <div className='award-box award-box-light' data-aos="zoom-in">
           <h3 className='award-title'>
             Most Effective Youth in Community Support - UNDP Youth on Board
             Initiative
           </h3>
-          <p className='award-description'>
+          <p className='award-description' data-aos="zoom-in">
             Honored by the United Nations Development Programme for impactful
             contributions to youth empowerment and grassroots community
             development.
           </p>
         </div>
 
-        <div className='award-box award-box-light'>
+        <div className='award-box award-box-light' data-aos="zoom-in">
           <h3 className='award-title'>
             Best Business Plan - Saudi Arabia (KSA)
           </h3>

@@ -37,6 +37,8 @@ export default function Navbar() {
             ? "Ventures"
             : page === "Recognitions"
               ? "Recognitions"
+                 : page === "Contact"
+              ? "Contact"
               : null;
 
     if (targetId) {
@@ -85,7 +87,7 @@ export default function Navbar() {
 
   return (
     <AppBar
-      position="fixed" // changed from static
+       position={window.innerWidth > 900 ? "fixed" : "relative"}
       sx={{
         bgcolor: "transparent",
         boxShadow: "none",
@@ -94,7 +96,7 @@ export default function Navbar() {
         alignItems: isMobile ? "end" : "center",
         p: 0,
         m: 0,
-        top: 15, // ensure it's stuck to the top
+        top: window.innerWidth > 1600 ? "36px" : "32px",
         left: 0,
         width: "100%", // span full width
         zIndex: 1100, // stay above other elements
@@ -219,7 +221,7 @@ export default function Navbar() {
                 selected={page === activePage}
                 onClick={() => handlePageClick(page)}
                 sx={{
-gap: 1,
+                  gap: 1,
                   bgcolor: page === activePage ? "#fff" : "transparent",
                   color: page === activePage ? "#0F0F0F" : "#fff",
                   "&.Mui-selected": {

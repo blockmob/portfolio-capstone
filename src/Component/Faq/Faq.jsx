@@ -35,49 +35,49 @@ const Faq = () => {
 
   return (
     <>
-    <div className="MainContainerFaq">
-      <div className="Faq-left-container">
-        <div className="aboutdiv">
-          <p className="about-section-number">08/</p>
-          <p className="about-section-number">FaQ</p>
-        </div>
-        <p className="awards-title  fadshfdhsfh">
-          Discover
-          <br className="FaqbreakLine"/> frequently asked questions
-        </p>
-      </div>
-      <div className="Faq-right-container">
-        {accordionData.map((item, index) => (
-          <div key={index} className="perFaqContainer">
-            <div
-              onClick={() => toggleAccordion(index)}
-              //   style={{
-              //     display: "flex",
-              //     justifyContent: "space-between",
-              //     alignItems: "center",
-              //     fontWeight: "500",
-              //   }}
-              className="Faq-question-top-arrow"
-            >
-              <p className="Faq-Question"> {item.question}</p>
-              <img
-                src="/Images/Faq/arrowDown.svg"
-                alt="arrow"
-                className={activeIndex === index ? "arrow rotated" : "arrow"}
-              />
-            </div>
-
-           <div
-  className={`Faq-Answer-Wrapper ${activeIndex === index ? "open" : ""}`}
->
-  <p className="Faq-Answer">{item.answer}</p>
-</div>
-
+      <div className="MainContainerFaq">
+        <div className="Faq-left-container" data-aos="fade-right">
+          <div className="aboutdiv">
+            <p className="about-section-number">08/</p>
+            <p className="about-section-number">FaQ</p>
           </div>
-        ))}
+          <p className="awards-title  fadshfdhsfh">
+            Discover
+            <br className="FaqbreakLine" /> frequently asked questions
+          </p>
+        </div>
+        <div className="Faq-right-container" data-aos="fade-left">
+          {accordionData.map((item, index) => (
+            <div key={index} className="perFaqContainer">
+              <div
+                onClick={() => toggleAccordion(index)}
+                //   style={{
+                //     display: "flex",
+                //     justifyContent: "space-between",
+                //     alignItems: "center",
+                //     fontWeight: "500",
+                //   }}
+                className="Faq-question-top-arrow"
+              >
+                <p className="Faq-Question"> {item.question}</p>
+                <img
+                  src="/Images/Faq/arrowDown.svg"
+                  alt="arrow"
+                  className={activeIndex === index ? "arrow rotated" : "arrow"}
+                />
+              </div>
+
+              <div
+                className={`Faq-Answer-Wrapper ${activeIndex === index ? "open" : ""}`}
+              >
+                <p className="Faq-Answer">{item.answer}</p>
+              </div>
+
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-    <Footer/>
+      <Footer />
     </>
   );
 };

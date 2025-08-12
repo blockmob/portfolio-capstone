@@ -3,18 +3,21 @@ import Navbar from '../../Component/Navbar/Navbar'
 import './Hero.css'
 const Hero = () => {
   return (
-    <div className='Hero-Container' id='Home'>
+    <div className='Hero-Container' id='Home' style={{overflowX:"hidden"}}>
       <Navbar />
       <div className='MainHeroDiv'>
         <div className="card-section">
-          <div className="card-section-top">
+          <div className="card-section-top"
+            data-aos="fade-right" data-aos-delay="200"
+            
+          >
             <p className='textvis'>Visionary Leadership</p>
             <p className='textvis'>Digital Transformation</p>
             <p className='textvis'>Regulatory Navigation</p>
             <p className='textvis'>Strategy & Execution</p>
           </div>
 
-          <div className="card-section-bottom">
+          <div className="card-section-bottom" data-aos="fade-right" data-aos-delay="700">
             <p className='learntext'>I Learn, grow, and lead.<br />
               I dont just imagine a better future- I craft it.</p>
             <button className='lettalk'>
@@ -26,7 +29,7 @@ const Hero = () => {
 
         </div>
 
-        <div className='valuediv'>
+        <div className='valuediv' data-aos="fade-left" data-aos-delay="1200">
           <p className='valuetext'>
             Value Proposition Disclosures and Vision
           </p>
@@ -36,8 +39,8 @@ const Hero = () => {
           <p className='textyear'>© 2025</p>
         </div>
       </div>
-      <img src='/Images/Hero/AbdullahNew.webp' className='MainPicPerson' alt='' />
-      <img src='/Images/Hero/TitlePic.png' className='titlePerson' alt='' />
+      <img src='/Images/Hero/AbdullahNew.webp' data-aos="zoom-in-up" data-aos-delay="100" className='MainPicPerson' alt='' />
+      <img src='/Images/Hero/TitlePic.png'   className='titlePerson'  alt='' />
     </div>
   )
 }

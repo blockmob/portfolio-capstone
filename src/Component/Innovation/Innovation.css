@@ -120,6 +120,21 @@
   /* box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08); */
 }
 
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.swing-image {
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
 .venture-logo {
   width: 48px;
   height: 48px;
