@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <div style={{ display: "flex", flexDirection: "column", width: "100%" ,overflowX:"hidden"}}>
       <Hero />
-      <div style={{ width: "100%", background: "white", maxWidth: "1620px" ,overflowX:"hidden" }} className='HomePageContainerNewwww'>
+      <div style={{ width: "100%", background: "white", maxWidth: "1620px" ,overflow:"hidden" }} className='HomePageContainerNewwww'>
         <About />
         <Mid_Cards />
         <Innovation />
