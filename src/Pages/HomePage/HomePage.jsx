@@ -5,16 +5,17 @@ import Hero from '../Hero/Hero'
 import Faq from '../Faq/Faq'
 import About from '../About/About'
 import Awards from '../../Component/Awards/Awards'
-
+import JourneyBeyondWork from "../../Component/JourneyBeyondWork/JourneyBeyond";
 const HomePage = () => {
   return (
     <div style={{width:"100%",background:"white",maxWidth:"1920px"}}>
-      <Hero/>
+      {/* <Hero/>
 
       <About/>
       <Mid_Cards />
       <Innovation/>
-      <Awards/>
+      <Awards/> */}
+      <JourneyBeyondWork />
       <Faq/>
     </div>
   )
