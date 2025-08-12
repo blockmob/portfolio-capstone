@@ -48,17 +48,37 @@ export default function Navbar() {
     handleScrollToSection(page);
   };
 
+  // Recalculate highlight on active page change and on layout-affecting events
   useEffect(() => {
-    const el = itemRefs.current[activePage];
-    if (el) {
-      const { offsetLeft, offsetWidth } = el;
+    function recalcHighlight() {
+      const el = itemRefs.current[activePage];
+      if (!el) return;
+
+      // Prefer getBoundingClientRect for cross-device consistency
+      const rect = el.getBoundingClientRect();
+      const parentRect = el.parentElement?.getBoundingClientRect();
+      const leftWithinParent = parentRect ? rect.left - parentRect.left : el.offsetLeft;
+
       setHighlightStyle({
-        width: `${offsetWidth}px`,
-        transform: `translateX(${offsetLeft}px) translateY(-50%)`,
+        width: `${Math.round(rect.width)}px`,
+        transform: `translateX(${Math.round(leftWithinParent)}px) translateY(-50%)`,
         top: "50%",
         height: "80%",
       });
     }
+
+    recalcHighlight();
+    // Recalc after fonts load (font metrics can shift widths)
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(recalcHighlight).catch(() => {});
+    }
+    // Recalc on window resize and orientation changes
+    window.addEventListener("resize", recalcHighlight);
+    window.addEventListener("orientationchange", recalcHighlight);
+    return () => {
+      window.removeEventListener("resize", recalcHighlight);
+      window.removeEventListener("orientationchange", recalcHighlight);
+    };
   }, [activePage]);
 
   return (
@@ -132,6 +152,8 @@ export default function Navbar() {
                 cursor: "pointer",
                 transition: "color 0.3s ease",
                 zIndex: 1,
+                // Ensure Home has consistent width across devices
+                // width: !isMobile && page === "Home" ? 87 : "auto",
               }}
               className="buttonnavbar"
             >
