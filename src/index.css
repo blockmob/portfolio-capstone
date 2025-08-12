@@ -61,6 +61,11 @@ h1 {
   font-display: swap;
 }
 @font-face {
+  font-family: 'WorkSans-Italics';
+  src: url('/public/Fonts/Work_Sans/WorkSans-LightItalic.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
   font-family: 'WorkSans-Medium';
   src: url('/public/Fonts/Work_Sans/WorkSans-Medium.ttf') format('truetype');
   font-display: swap;
