@@ -144,58 +144,69 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Button */}
-        <div
-          style={{
-            display: window.innerWidth < 900 ? "flex" : "none",
-            alignItems: "center",
-          }}
-        >
-          <IconButton onClick={handleMenuOpen} sx={{ color: "#fff", p: 0.5 }}>
-            <MenuIcon />
-          </IconButton>
-          <Menu
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={handleMenuClose}
-            PaperProps={{
-              sx: {
-                bgcolor: "#0F0F0F",
-                width: "100%",
+      {/* Mobile Menu Button */}
+<div
+  style={{
+    display: window.innerWidth < 900 ? "flex" : "none",
+    alignItems: "center",
+    justifyContent: "flex-end", // push to right side
+    flex: 1,
+  }}
+>
+  <IconButton
+    onClick={handleMenuOpen}
+    sx={{
+      color: "#fff", // icon color
+      p: 0, // remove padding for no circle
+      background: "none", // no background
+      "&:hover": {
+        background: "none", // no hover circle
+      },
+    }}
+  >
+    <MenuIcon />
+  </IconButton>
+  <Menu
+    anchorEl={anchorEl}
+    open={Boolean(anchorEl)}
+    onClose={handleMenuClose}
+    PaperProps={{
+      sx: {
+        bgcolor: "#0F0F0F",
+        width: "100%",
+      },
+    }}
+  >
+    {pages.map((page) => (
+      <MenuItem
+        key={page}
+        selected={page === activePage}
+        onClick={() => handlePageClick(page)}
+        sx={{
+          bgcolor: page === activePage ? "#fff" : "transparent",
+          color: page === activePage ? "#0F0F0F" : "#fff",
+          "&.Mui-selected": {
+            bgcolor: "#fff",
+            color: "#0F0F0F",
+          },
+          "&.Mui-selected:hover": {
+            bgcolor: "#fff",
+          },
+        }}
+      >
+        {activePage === page && (
+          <img
+            src={pageIcons[page]}
+            alt={`${page} icon`}
+            style={{ width: 18, marginRight: 8 }}
+          />
+        )}
+        {page}
+      </MenuItem>
+    ))}
+  </Menu>
+</div>
 
-              },
-            }}
-          >
-            {pages.map((page) => (
-              <MenuItem
-                key={page}
-                selected={page === activePage}
-                onClick={() => handlePageClick(page)}
-                sx={{
-
-                  bgcolor: page === activePage ? "#fff" : "transparent",
-                  color: page === activePage ? "#0F0F0F" : "#fff",
-                  "&.Mui-selected": {
-                    bgcolor: "#fff",
-                    color: "#0F0F0F",
-                  },
-                  "&.Mui-selected:hover": {
-                    bgcolor: "#fff",
-                  },
-                }}
-              >
-                {activePage === page && (
-                  <img
-                    src={pageIcons[page]}
-                    alt={`${page} icon`}
-                    style={{ width: 18, marginRight: 8 }}
-                  />
-                )}
-                {page}
-              </MenuItem>
-            ))}
-          </Menu>
-
-        </div>
       </div>
     </AppBar>
   );
