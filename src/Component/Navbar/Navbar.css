@@ -3,9 +3,9 @@
     font-weight: 400;
     font-style: Regular;
     font-size: 16px;
-    leading-trim: NONE;
     line-height: 150%;
-    letter-spacing: -2%;
+    /* Use a valid unit for letter-spacing to ensure consistent widths across devices */
+    letter-spacing: -0.02em;
     color: #FFFFFF;
     margin: 0px !important;
 }
@@ -35,6 +35,12 @@
 }
 
 
+/* Ensure icon has a consistent default size on all screens */
+.iconpage{
+  height: 18px;
+  width: 18px;
+}
+
 @media (min-width: 1600px) {
   .FOntofnavbar{
     font-size: 18px;
@@ -51,7 +57,7 @@
   border-radius: 112.5px;
   }
   .iconpage{
-height: 22.5px;
-width: 22.5px ;
+ height: 22.5px;
+ width: 22.5px ;
   }
 }

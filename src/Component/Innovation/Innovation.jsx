@@ -54,11 +54,13 @@ const Innovation = () => {
               </p>
             </div>
             <div className='venture-block capstone-block' data-aos="fade-down">
-              <img
-                src='/Images/midsection/capstonelogo.svg'
-                alt='Capstone Logo'
-                className='logoosss'
-              />
+              <a href='https://capstonedmcc.ae/' target='_blank' rel='noopener noreferrer'>
+                <img
+                  src='/Images/midsection/capstonelogo.svg'
+                  alt='Capstone Logo'
+                  className='logoosss'
+                />
+              </a>
               <div data-aos="fade-down">
                 <h2>Capstone Blockchain DMCC</h2>
                 <p className='venture-description'>
@@ -75,7 +77,9 @@ const Innovation = () => {
               </div>
             </div>
             <div className='venture-block gaya-wallet-block' data-aos="fade-down">
-              <img src='/Images/midsection/gw.svg' alt='Capstone Logo' className='logoosss1' />
+              <a href='https://gayawallet.com/' target='_blank' rel='noopener noreferrer'>
+                <img src='/Images/midsection/gw.svg' alt='Capstone Logo' className='logoosss1' />
+              </a>
               <div>
                 <h2>Gaya Wallet</h2>
                 <p className='venture-description'>
@@ -92,7 +96,9 @@ const Innovation = () => {
               </div>
             </div>
             <div className='venture-block dr3-block' data-aos="fade-down">
-              <img src='/Images/midsection/dr3.svg' alt='Capstone Logo' className='logoosss1' />
+              <a href='https://dr3.ae/' target='_blank' rel='noopener noreferrer'>
+                <img src='/Images/midsection/dr3.svg' alt='Capstone Logo' className='logoosss1' />
+              </a>
               <div>
                 <h2>DR3</h2>
                 <p className='venture-description'>
@@ -120,7 +126,9 @@ const Innovation = () => {
                 </p>
               </div>
               <div className='venture-block gaya-blockchain-block' data-aos="fade-down">
-                <img src='/Images/midsection/gb.svg' alt='Capstone Logo' className='logoosss' />
+                <a href='https://www.gayablockchain.io/' target='_blank' rel='noopener noreferrer'>
+                  <img src='/Images/midsection/gb.svg' alt='Capstone Logo' className='logoosss' />
+                </a>
                 <div>
                   <h2>Gaya Blockchain</h2>
                   <p className='venture-description'>
@@ -132,7 +140,9 @@ const Innovation = () => {
                 </div>
               </div>
               <div className='venture-block city-crafters-block' data-aos="fade-down">
-                <img src='/Images/midsection/cc.svg' alt='Capstone Logo' className='logoosss' />
+                <a href='https://citycrafters.ae/' target='_blank' rel='noopener noreferrer'>
+                  <img src='/Images/midsection/cc.svg' alt='Capstone Logo' className='logoosss' />
+                </a>
                 <div>
                   <h2>City Crafters</h2>
                   <p className='venture-description'>

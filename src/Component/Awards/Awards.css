@@ -2,6 +2,7 @@
   /* max-width: 1200px;
   margin: 0 auto !important; */
   padding: 4rem 123px;
+  padding-top: 198px;
   background-color: white;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     sans-serif;
@@ -182,6 +183,7 @@
   .awards-title {
   text-align: left;
     font-size: 36px;
+  margin-top: 30px !important;
   }
 
   .awards-grid {
