@@ -9,9 +9,9 @@ import Awards from '../../Component/Awards/Awards'
 const HomePage = () => {
   return (
     <div style={{width:"100%",background:"white",maxWidth:"1920px"}}>
-      <Hero/>
+      {/* <Hero/> */}
 
-      <About/>
+      {/* <About/> */}
       <Mid_Cards />
       <Innovation/>
       <Awards/>
