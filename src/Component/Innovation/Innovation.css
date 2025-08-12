@@ -320,8 +320,16 @@
   }
 }
 @media (max-width: 768px) {
+  .venture-description {
+    text-align: center;
+  }
   .venture-block {
+    max-width: unset;
     gap: 14px;
+    align-items: center;
+  }
+  .venture-block h2 {
+    text-align: center;
   }
   .logoosss1{
     width: 120px;
@@ -330,6 +338,7 @@
     width: 150px;
   }
   .venture-quote {
+    text-align: center;
     font-size: 12px;
   }
   .innovation-header-right {
@@ -348,6 +357,11 @@
 }
   .innovation-main-title {
     margin: 25px 0px 0px 0px !important;
+    text-align: center;
+  }
+  .innovation-header-description {
+    text-align: center;
+    max-width: unset;
   }
   .innovation-header-left {
     margin-top: 30px !important;
@@ -387,7 +401,6 @@
   .innovation-header-description {
     font-size: 12.25px;
     line-height: 19px;
-    max-width: 390px;
   }
   .venture-block h2 {
     font-size: 14.5px;

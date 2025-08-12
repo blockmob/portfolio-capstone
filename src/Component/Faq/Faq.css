@@ -7,6 +7,9 @@
   padding-top: 221px;
   padding-bottom: 172px;
 }
+.fadshfdhsfh{
+  text-align: left;
+}
 .Faq-left-container {
   display: flex;
   flex-direction: column;
@@ -169,6 +172,9 @@
   }
 }
 @media (max-width: 768px) {
+  .fadshfdhsfh{
+    text-align: center;
+  }
   .Faq-left-container h2 {
     font-size: 36px;
     text-align: center;

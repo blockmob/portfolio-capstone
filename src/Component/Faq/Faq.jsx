@@ -1,7 +1,7 @@
 import React from "react";
 import "./Faq.css";
 import { useState } from "react";
-import Footer from "../../Component/footer/footer";
+import Footer from "../footer/footer";
 const accordionData = [
   {
     question: "What kind of projects do you typically work on?",
@@ -41,10 +41,10 @@ const Faq = () => {
           <p className="FaqsectionPart">07/</p>
           <p className="faqSectionheading">FaQ</p>
         </div>
-        <h2>
+        <p className="awards-title  fadshfdhsfh">
           Discover
           <br className="FaqbreakLine"/> frequently asked questions
-        </h2>
+        </p>
       </div>
       <div className="Faq-right-container">
         {accordionData.map((item, index) => (

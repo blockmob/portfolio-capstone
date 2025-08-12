@@ -1,6 +1,4 @@
 import React from 'react'
-import Hero from './Pages/Hero/Hero'
-import Faq from './Pages/Faq/Faq'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import HomePage from './Pages/HomePage/HomePage'
 
