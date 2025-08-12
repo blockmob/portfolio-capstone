@@ -13,19 +13,24 @@
   -moz-osx-font-smoothing: grayscale;
 
 }
+
 html,
 body,
 #root {
   width: 100%;
   display: flex;
   justify-content: center;
-  
+
 }
+
 body {
   font-family: 'WorkSans', sans-serif;
 }
+
 * {
-  margin: 0 !important;}
+  margin: 0 !important;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -55,31 +60,37 @@ h1 {
   src: url('/public/Fonts/Geist-SemiBold.ttf') format('woff2');
   font-display: swap;
 }
+
 @font-face {
   font-family: 'WorkSans';
   src: url('/public/Fonts/Work_Sans/WorkSans-Regular.ttf') format('truetype');
   font-display: swap;
 }
+
 @font-face {
   font-family: 'WorkSans-Italics';
   src: url('/public/Fonts/Work_Sans/WorkSans-LightItalic.ttf') format('truetype');
   font-display: swap;
 }
+
 @font-face {
   font-family: 'WorkSans-Medium';
   src: url('/public/Fonts/Work_Sans/WorkSans-Medium.ttf') format('truetype');
   font-display: swap;
 }
+
 @font-face {
   font-family: 'WorkSans-Semibold';
   src: url('/public/Fonts/Work_Sans/WorkSans-SemiBold.ttf') format('truetype');
   font-display: swap;
 }
+
 @font-face {
   font-family: 'WorkSans-Bold';
   src: url('/public/Fonts/Work_Sans/WorkSans-Bold.ttf') format('truetype');
   font-display: swap;
 }
+
 @font-face {
   font-family: 'NunitoSans-Bold';
   src: url('/public/Fonts/NunitoSans-Bold.ttf') format('truetype');
@@ -99,11 +110,13 @@ h1 {
   src: url('/public/Fonts/Geist-SemiBold.ttf') format('woff2');
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Geist-Bold';
   src: url('/public/Fonts/Geist-Bold.ttf') format('woff2');
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Geist-Medium';
   src: url('/public/Fonts/Geist-Medium.ttf') format('woff2');
@@ -117,7 +130,7 @@ h1 {
 }
 
 
-.HomePageContainerNewwww{
+.HomePageContainerNewwww {
   margin-left: auto !important;
   margin-right: auto !important;
 }
