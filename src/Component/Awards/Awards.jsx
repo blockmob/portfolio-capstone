@@ -3,7 +3,7 @@ import './Awards.css'
 
 const Awards = () => {
   return (
-    <div className='awards-container'>
+    <div className='awards-container' id='Recognitions'>
       <div className='awards-header'>
         <div className="aboutdiv">
           <p className="about-section-number">05/</p>

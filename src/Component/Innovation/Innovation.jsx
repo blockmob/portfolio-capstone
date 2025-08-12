@@ -2,7 +2,7 @@ import React from 'react'
 import './Innovation.css'
 const Innovation = () => {
   return (
-    <div className='innovation-section'>
+    <div className='innovation-section' id='Ventures'>
       <div className='homeimagediv'>
         <img
           src='/Images/midsection/image_1_1_4x.webp'

@@ -25,12 +25,35 @@ export default function Navbar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
   const itemRefs = useRef({});
 
+  const handleScrollToSection = (page) => {
+
+
+    const targetId =
+      page === "Home"
+        ? "Home"
+        : page === "About"
+          ? "About"
+          : page === "Ventures"
+            ? "Ventures"
+            : page === "Recognitions"
+              ? "Recognitions"
+              : null;
+
+    if (targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+
 
   useEffect(() => {
-  const handleResize = () => setIsMobile(window.innerWidth < 900);
-  window.addEventListener("resize", handleResize);
-  return () => window.removeEventListener("resize", handleResize);
-}, []);
+    const handleResize = () => setIsMobile(window.innerWidth < 900);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -43,6 +66,7 @@ export default function Navbar() {
   const handlePageClick = (page) => {
     setActivePage(page);
     handleMenuClose();
+    handleScrollToSection(page);
   };
 
   // Update highlight position whenever activePage changes
@@ -61,20 +85,24 @@ export default function Navbar() {
 
   return (
     <AppBar
-      position="static"
+      position="fixed" // changed from static
       sx={{
         bgcolor: "transparent",
         boxShadow: "none",
         display: "flex",
         justifyContent: "center",
-        alignItems:isMobile ?"end": "center",
+        alignItems: isMobile ? "end" : "center",
         p: 0,
         m: 0,
+        top: 15, // ensure it's stuck to the top
+        left: 0,
+        width: "100%", // span full width
+        zIndex: 1100, // stay above other elements
       }}
     >
       <div
         style={{
-          backgroundColor: isMobile ?"transparent": "#0F0F0F",
+          backgroundColor: isMobile ? "transparent" : "#0F0F0F",
           borderRadius: "100px",
           display: "flex",
           justifyContent: "center",
@@ -102,7 +130,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div
           style={{
-            display: isMobile? "none" : "flex",
+            display: isMobile ? "none" : "flex",
             alignItems: "center",
             gap: "4px",
             position: "relative",
@@ -158,16 +186,18 @@ export default function Navbar() {
             alignItems: "center",
             justifyContent: "flex-start", // align left
             width: "100%",
+            backgroundColor: "transparent",
           }}
         >
-           <IconButton
-    onClick={handleMenuOpen}
-    sx={{
-      color: "#000", // black icon
-      padding: 0,
-      "&:hover": { backgroundColor: "transparent" },
-    }}
-  > 
+          <IconButton
+            onClick={handleMenuOpen}
+            sx={{
+              backgroundColor: "transparent",
+              color: "#000", // black icon
+              padding: 0,
+              "&:hover": { backgroundColor: "transparent" },
+            }}
+          >
             <MenuIcon />
           </IconButton>
 

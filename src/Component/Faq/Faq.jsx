@@ -11,17 +11,17 @@ const accordionData = [
   {
     question: "What is Capstone Blockchain DMCC?",
     answer:
-      "Capstone Blockchain DMCC is a Dubai-based company specializing in blockchain solutions, advisory, and infrastructure projects.",
+      "Capstone is a transformation group I lead that helps governments and enterprises navigate Web3 and blockchain technologies. We build real-world solutions in areas like digital identity, tokenization, and DeFi.",
   },
   {
     question: "Can I collaborate with you on a venture or idea?",
     answer:
-      "Absolutely! I enjoy collaborating on innovative projects that align with my expertise and values.",
+      "I’m always open to aligned collaborations—especially projects with clear vision, purpose, and execution potential. Feel free to reach out through my contact form or LinkedIn.",
   },
   {
     question: "What industries do you have experience in?",
     answer:
-      "My experience spans blockchain, fintech, logistics, and enterprise digital transformation.",
+      "I’ve worked across fintech, blockchain, gaming, real estate tech, and identity systems. My strength lies in applying systems thinking to drive innovation across multiple sectors.",
   },
 ];
 

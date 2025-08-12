@@ -143,6 +143,10 @@
   .about-left-text {
     font-size: 18px;
   }
+  .arrowicon{
+    height: 24px;
+    width: 24px;
+  }
 }
 
 @media (max-width:1300px) {

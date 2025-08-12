@@ -3,7 +3,7 @@ import Navbar from '../../Component/Navbar/Navbar'
 import './Hero.css'
 const Hero = () => {
   return (
-    <div className='Hero-Container'>
+    <div className='Hero-Container' id='Home'>
       <Navbar />
       <div className='MainHeroDiv'>
         <div className="card-section">
@@ -36,7 +36,7 @@ const Hero = () => {
           <p className='textyear'>© 2025</p>
         </div>
       </div>
-      <img src='/Images/Hero/Abdullah.webp' className='MainPicPerson' alt='' />
+      <img src='/Images/Hero/AbdullahNew.webp' className='MainPicPerson' alt='' />
       <img src='/Images/Hero/TitlePic.png' className='titlePerson' alt='' />
     </div>
   )

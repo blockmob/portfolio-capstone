@@ -40,7 +40,7 @@ function About() {
   }, []);
 
   return (
-    <section className="about-section">
+    <section className="about-section" id='About'>
       {/* Left Section */}
       <div className="about-left">
         <div className="aboutdiv">
