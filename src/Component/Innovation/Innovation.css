@@ -93,6 +93,10 @@
   gap: 48px;
   justify-content: center;
   margin-top: -101px !important;
+  @media (max-width: 1440px) {
+      justify-content: space-between;
+
+  }
 }
 
 .innovation-left-column {
