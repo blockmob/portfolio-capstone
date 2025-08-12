@@ -219,7 +219,7 @@ export default function Navbar() {
                 selected={page === activePage}
                 onClick={() => handlePageClick(page)}
                 sx={{
-
+gap: 1,
                   bgcolor: page === activePage ? "#fff" : "transparent",
                   color: page === activePage ? "#0F0F0F" : "#fff",
                   "&.Mui-selected": {
