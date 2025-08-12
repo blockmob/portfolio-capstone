@@ -3,7 +3,7 @@ import SplitType from "split-type";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./About.css";
-
+import '../Hero/Hero.css';
 gsap.registerPlugin(ScrollTrigger);
 
 function About() {

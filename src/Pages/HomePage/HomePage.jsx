@@ -10,8 +10,8 @@ const HomePage = () => {
   return (
     <div style={{width:"100%",background:"white",maxWidth:"1920px"}}>
       <Hero/>
-    {/* <About/> 
-      <Mid_Cards />
+    <About/> 
+    {/*   <Mid_Cards />
       <Innovation/>
       <Awards/>
       <Faq/> */}

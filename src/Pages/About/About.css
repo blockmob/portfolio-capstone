@@ -6,13 +6,13 @@
   align-items: flex-start;
 
   padding: 252px 80px 100px;
- 
+
 }
 
-.aboutdiv{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.aboutdiv {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .about-left {
@@ -22,31 +22,31 @@
 }
 
 .about-section-number {
-font-family: WorkSans-Medium;
-font-weight: 500;
-font-style: Medium;
-font-size: 20px;
-leading-trim: CAP_HEIGHT;
-line-height: 100%;
-letter-spacing: -3%;
-margin: 0px !important;
-text-transform: uppercase;
-color: #0F0F0F;
+  font-family: WorkSans-Medium;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 100%;
+  letter-spacing: -3%;
+  margin: 0px !important;
+  text-transform: uppercase;
+  color: #0F0F0F;
 }
 
 
 
 .about-left-text {
- font-family: WorkSans;
-font-weight: 400;
-font-style: Regular;
-font-size: 22px;
-leading-trim: CAP_HEIGHT;
-line-height: 150%;
-letter-spacing: 0%;
-color: #1D1E24;
-margin: 0px !important;
-width: 510px ;
+  font-family: WorkSans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #1D1E24;
+  margin: 0px !important;
+  width: 510px;
 }
 
 
@@ -59,50 +59,193 @@ width: 510px ;
   margin-bottom: 18px !important;
 }
 
-.about-right-text-new{
-font-family: WorkSans;
-font-weight: 400;
-font-style: Regular;
-font-size: 36px;
-leading-trim: CAP_HEIGHT;
-line-height: 130%;
-letter-spacing: -3%;
+.about-right-text-new {
+  font-family: WorkSans;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 36px;
+  leading-trim: CAP_HEIGHT;
+  line-height: 130%;
+  letter-spacing: -3%;
 
- color: #1D1E2480;
-margin: 0px !important;
+  color: #1D1E2480;
+  margin: 0px !important;
 }
 
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
-    gap: 30px;
-  }
-}
 
 
 @media (min-width: 1600px) {
 
-  .about-section-number{
+  .about-section-number {
     font-size: 22.5px;
   }
-  .aboutdiv{
+
+  .aboutdiv {
     gap: 18px;
   }
-  .about-left{
+
+  .about-left {
     gap: 186.86;
   }
-  .about-left-text{
+
+  .about-left-text {
     font-size: 24.75px;
   }
-  .about-right-text-new{
+
+  .about-right-text-new {
     font-size: 40.5px;
   }
-  .about-section{
+
+  .about-section {
     padding: 283.5px 106.88px 100px;
     gap: 138.38px;
   }
-  .about-line{
-        width: 93.9375px;
+
+  .about-line {
+    width: 93.9375px;
     height: 1.69px;
+  }
+}
+
+@media (max-width:1350px) {
+  .about-right-text-new {
+    font-size: 30px;
+  }
+
+  .about-left {
+    gap: 100px;
+  }
+
+  .about-left-text {
+    font-size: 20px;
+  }
+
+  .about-section {
+    gap: 90px;
+  }
+}
+
+@media (max-width:1350px) {
+  .about-section-number {
+    font-size: 18px;
+  }
+
+  .aboutdiv {
+    gap: 12px;
+  }
+
+  .about-right-text-new {
+    font-size: 28px;
+  }
+
+  .about-left-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width:1300px) {
+  .about-section {
+    padding-top: 150px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .about-left-text {
+    width: 450px;
+  }
+}
+
+@media (max-width:1200px) {
+  .about-section {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+}
+
+@media (max-width:1100px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-section {
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .about-right-text-new {
+    font-size: 24px;
+  }
+
+  .about-section {
+    gap: 80px;
+  }
+
+  .about-left {
+    gap: 50px;
+  }
+
+  .about-left-text {
+    width: unset;
+  }
+}
+
+@media (max-width:1050px) {
+  .about-section {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width:900px) {
+  .about-section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width:650px) {
+  .about-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 70px;
+  }
+
+  .aboutdiv {
+    gap: 6px;
+  }
+
+  .about-left {
+    gap: 30px;
+  }
+}
+
+@media (max-width:500px) {
+  .about-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 60px;
+    padding-bottom: 50px;
+  }
+
+  .about-left-text {
+    font-size: 16px;
+  }
+
+  .about-right-text-new {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width:410px) {
+  .about-left-text {
+    font-size: 13px;
+  }
+
+  .about-right-text-new {
+    font-size: 18px;
   }
 }

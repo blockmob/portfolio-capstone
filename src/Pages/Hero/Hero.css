@@ -254,6 +254,8 @@
         padding: 26px 80px 150px;
     }
 
+   
+
     .MainPicPerson {
         width: 900px;
     }
@@ -282,6 +284,7 @@
         padding: 26px 70px 150px;
     }
 
+   
     .MainPicPerson {
         width: 800px;
     }
@@ -308,6 +311,7 @@
         padding: 26px 60px 140px;
     }
 
+   
 }
 
 @media (max-width:1050px) {
@@ -339,6 +343,8 @@
     .Hero-Container {
         padding: 26px 50px 140px;
     }
+
+   
 
     .MainHeroDiv {
         gap: 350px;
@@ -396,6 +402,8 @@
     .Hero-Container {
         padding: 24px 40px 120px;
     }
+
+  
 
     .MainHeroDiv {
         padding-top: 40px;
@@ -492,6 +500,8 @@
         padding: 20px 30px 120px;
     }
 
+   
+
     .textvis,
     .valuetext {
         font-size: 16px;
@@ -552,9 +562,12 @@
     .Hero-Container {
         padding: 15px 20px 120px;
     }
-.learntext{
-    max-width: unset;
-}
+
+    
+
+    .learntext {
+        max-width: unset;
+    }
 }
 
 @media (max-width:400px) {
@@ -572,10 +585,11 @@
         flex-direction: column;
     }
 }
+
 @media (max-width:350px) {
- .card-section {
-    
+    .card-section {
+
         margin-bottom: 150px !important;
-    
+
     }
 }
