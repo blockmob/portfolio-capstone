@@ -22,7 +22,15 @@ export default function Navbar() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [activePage, setActivePage] = useState("Home");
   const [highlightStyle, setHighlightStyle] = useState({});
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
   const itemRefs = useRef({});
+
+
+  useEffect(() => {
+  const handleResize = () => setIsMobile(window.innerWidth < 900);
+  window.addEventListener("resize", handleResize);
+  return () => window.removeEventListener("resize", handleResize);
+}, []);
 
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
@@ -59,14 +67,14 @@ export default function Navbar() {
         boxShadow: "none",
         display: "flex",
         justifyContent: "center",
-        alignItems:window.innerWidth < 900 ?"end": "center",
+        alignItems:isMobile ?"end": "center",
         p: 0,
         m: 0,
       }}
     >
       <div
         style={{
-          backgroundColor: window.innerWidth < 900 ?"transparent": "#0F0F0F",
+          backgroundColor: isMobile ?"transparent": "#0F0F0F",
           borderRadius: "100px",
           display: "flex",
           justifyContent: "center",
@@ -94,7 +102,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div
           style={{
-            display: window.innerWidth < 900 ? "none" : "flex",
+            display: isMobile? "none" : "flex",
             alignItems: "center",
             gap: "4px",
             position: "relative",
@@ -146,7 +154,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <div
           style={{
-            display: window.innerWidth < 900 ? "flex" : "none",
+            display: isMobile ? "flex" : "none",
             alignItems: "center",
             justifyContent: "flex-start", // align left
             width: "100%",
