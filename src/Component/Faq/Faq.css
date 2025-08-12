@@ -7,7 +7,13 @@
   padding-top: 221px;
   padding-bottom: 172px;
 }
+<<<<<<< HEAD:src/Pages/Faq/Faq.css
 
+=======
+.fadshfdhsfh{
+  text-align: left;
+}
+>>>>>>> 694aeb715233bfc62e5de035adca349d224f504c:src/Component/Faq/Faq.css
 .Faq-left-container {
   display: flex;
   flex-direction: column;
@@ -196,6 +202,9 @@
 }
 
 @media (max-width: 768px) {
+  .fadshfdhsfh{
+    text-align: center;
+  }
   .Faq-left-container h2 {
     font-size: 36px;
     text-align: center;

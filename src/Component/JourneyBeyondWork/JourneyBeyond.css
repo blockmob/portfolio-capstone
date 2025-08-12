@@ -174,9 +174,9 @@
 }
 @media (min-width: 1500px) {
   .Section6MainContainer {
-    padding-left: 164.25px;
-    padding-right: 121.5px;
-    max-width: 1334.25px;
+    padding-left: 142.5px;
+    padding-right: 142.5px;
+    /* max-width: 1334.25px; */
   }
   .JourneyBeyongWorkContainer {
     padding-top: 74.25px;
