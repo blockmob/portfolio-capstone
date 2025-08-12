@@ -7,12 +7,14 @@
   padding-top: 221px;
   padding-bottom: 172px;
 }
+
 .Faq-left-container {
   display: flex;
   flex-direction: column;
   gap: 40px;
   /* width: 100%; */
 }
+
 .Faq-heading-section-part {
   align-items: flex-start;
   display: flex;
@@ -21,6 +23,7 @@
   /* height: 42px;
   justify-content: space-between; */
 }
+
 .FaqsectionPart {
   font-family: WorkSans-Medium;
   font-weight: 500;
@@ -33,6 +36,7 @@
   text-transform: uppercase;
   color: #1d1e24;
 }
+
 .faqSectionheading {
   font-family: WorkSans-Medium;
   font-weight: 500;
@@ -44,8 +48,9 @@
   text-transform: uppercase;
   color: #1d1e24;
 }
+
 .Faq-left-container h2 {
-  color:  #1D1E24;
+  color: #1D1E24;
   font-family: NunitoSans-Bold;
   font-weight: 700;
   font-style: Bold;
@@ -55,6 +60,7 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
+
 .Faq-right-container {
   max-width: 620px;
   width: 100%;
@@ -62,6 +68,7 @@
   border-top: 1px solid #989898;
   margin-top: 82px !important;
 }
+
 .perFaqContainer {
   border-bottom: 1px solid #989898;
   padding: 24px;
@@ -70,12 +77,14 @@
   gap: 24px;
   cursor: pointer;
 }
+
 .Faq-question-top-arrow {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 4px;
 }
+
 .Faq-Question {
   font-family: WorkSans-Medium;
   font-weight: 500;
@@ -86,6 +95,7 @@
   letter-spacing: -0.03em;
   color: #1d1e24;
 }
+
 .Faq-Answer {
   font-family: WorkSans;
   font-weight: 400;
@@ -96,6 +106,7 @@
   letter-spacing: 0%;
   color: #1d1e24;
 }
+
 .arrow {
   transition: transform 0.3s ease;
 }
@@ -103,12 +114,14 @@
 .arrow.rotated {
   transform: rotate(180deg);
 }
+
 @media (max-width: 1427px) {
   .MainContainerFaq {
     gap: 50px;
     justify-content: space-between;
   }
 }
+
 @media (max-width: 1336px) {
   .MainContainerFaq {
     padding-left: 60px;
@@ -117,30 +130,38 @@
     padding-bottom: 130px;
   }
 }
+
 @media (max-width: 1293px) {
   .Faq-right-container {
     min-width: 580px;
   }
+
   .Faq-left-container {
     width: 100%;
   }
+
   .Faq-left-container h2 {
     font-size: 50px;
   }
 }
+
 @media (max-width: 1199px) {
   .MainContainerFaq {
     gap: 30px;
   }
+
   .Faq-right-container {
     min-width: unset;
   }
+
   .Faq-Question {
     font-size: 20px;
   }
+
   .Faq-Answer {
     font-size: 16px;
   }
+
   .MainContainerFaq {
     padding-left: 50px;
     padding-right: 50px;
@@ -148,36 +169,44 @@
     padding-bottom: 80px;
   }
 }
+
 @media (max-width: 1030px) {
   .MainContainerFaq {
     flex-direction: column;
   }
+
   .Faq-right-container {
     max-width: 100%;
     margin-top: 30px !important;
   }
+
   .FaqbreakLine {
     display: none;
   }
+
   .Faq-left-container h2 {
     font-size: 44px;
   }
 }
+
 @media (max-width: 1000px) {
   .Faq-left-container h2 {
     font-size: 40px;
   }
 }
+
 @media (max-width: 768px) {
   .Faq-left-container h2 {
     font-size: 36px;
   }
+
   .MainContainerFaq {
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   .arrow {
     height: 24px;
     width: 24px;
@@ -188,35 +217,44 @@
   .Faq-right-container {
     margin-top: 0px !important;
   }
+
   .Faq-left-container h2 {
     font-size: 32px;
   }
+
   .MainContainerFaq {
     padding-left: 24px;
     padding-right: 24px;
   }
+
   .perFaqContainer {
     padding: 18px;
     gap: 15px;
   }
+
   .Faq-Question {
     font-size: 18px;
   }
+
   .Faq-Answer {
     font-size: 14px;
   }
 }
+
 @media (max-width: 400px) {
   .perFaqContainer {
     padding: 15px;
   }
+
   .Faq-Question {
     font-size: 16px;
   }
+
   .Faq-Answer {
     font-size: 12px;
   }
 }
+
 @media (max-width: 340px) {
   .Faq-left-container h2 {
     font-size: 30px;
@@ -227,33 +265,42 @@
   .Faq-left-container h2 {
     font-size: 63px;
   }
+
   .FaqsectionPart {
     font-size: 22.5px;
   }
+
   .faqSectionheading {
     font-size: 22.5px;
   }
+
   .Faq-Question {
     font-size: 27px;
   }
+
   .Faq-Answer {
     font-size: 20.25px;
   }
+
   .Faq-right-container {
     max-width: 697.5px;
   }
+
   .perFaqContainer {
     padding: 27px;
     gap: 27px;
   }
+
   .Faq-left-container {
     display: flex;
     flex-direction: column;
     gap: 44px;
   }
+
   .Faq-heading-section-part {
     gap: 18px;
   }
+
   .MainContainerFaq {
     padding-left: 90px;
     padding-right: 90px;

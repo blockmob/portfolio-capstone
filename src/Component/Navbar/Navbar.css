@@ -33,3 +33,25 @@
 .hamburger.open span:last-child {
   transform: rotate(-45deg) translate(4px, -4px);
 }
+
+
+@media (min-width: 1600px) {
+  .FOntofnavbar{
+    font-size: 18px;
+  }
+  .buttonnavbar{
+    padding: 9px 22.5px;
+    border-radius: 112.5px;
+    
+  }
+  .slidingdiv{
+      border-radius: 112.5px;
+  }
+  .slidingdivtop{
+  border-radius: 112.5px;
+  }
+  .iconpage{
+height: 22.5px;
+width: 22.5px ;
+  }
+}

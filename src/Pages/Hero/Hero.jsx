@@ -15,9 +15,8 @@ const Hero = () => {
           </div>
 
           <div className="card-section-bottom">
-            <p className='learntext'>I Learn, grow, and lead.
-              I dont just imagine a better
-              future- I craft it.</p>
+            <p className='learntext'>I Learn, grow, and lead.<br />
+              I dont just imagine a better future- I craft it.</p>
             <button className='lettalk'>
               Let’s Talk
             </button>
@@ -30,14 +29,14 @@ const Hero = () => {
           <p className='valuetext'>
             Value Proposition Disclosures and Vision
           </p>
-            <p className='valuetextdet'>
-          I’m Abdullah, a business leader, strategist, and transformation advisor with a focus on building scalable, future-ready organizations across technology and finance.
+          <p className='valuetextdet'>
+            I’m Abdullah, a business leader, strategist, and transformation advisor with a focus on building scalable, future-ready organizations across technology and finance.
           </p>
           <p className='textyear'>© 2025</p>
         </div>
       </div>
-      <img src='/Images/Hero/Abdullah.webp' className='MainPicPerson' alt=''/>
-      <img src='/Images/Hero/TitlePic.png' className='titlePerson' alt=''/>
+      <img src='/Images/Hero/Abdullah.webp' className='MainPicPerson' alt='' />
+      <img src='/Images/Hero/TitlePic.png' className='titlePerson' alt='' />
     </div>
   )
 }

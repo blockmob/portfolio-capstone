@@ -4,7 +4,7 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import "./Navbar.css";
-import MenuIcon from "@mui/icons-material/Menu"; 
+import MenuIcon from "@mui/icons-material/Menu";
 
 
 const pages = ["Home", "About", "Ventures", "Recognitions", "Contact"];
@@ -76,6 +76,7 @@ export default function Navbar() {
           position: "relative",
           overflow: "hidden",
         }}
+          className="slidingdivtop"
       >
         {/* Sliding Highlight */}
         <div
@@ -87,6 +88,7 @@ export default function Navbar() {
             transition: "transform 0.3s ease, width 0.3s ease",
             ...highlightStyle,
           }}
+          className="slidingdiv"
         ></div>
 
         {/* Desktop Menu */}
@@ -113,6 +115,7 @@ export default function Navbar() {
                 transition: "color 0.3s ease",
                 zIndex: 1,
               }}
+              className="buttonnavbar"
             >
               <div
                 style={{
@@ -124,7 +127,7 @@ export default function Navbar() {
               >
                 {/* Only show icon if page is active */}
                 {activePage === page && (
-                  <img src={pageIcons[page]} alt={`${page} icon`} />
+                  <img src={pageIcons[page]} alt={`${page} icon`} className="iconpage"/>
                 )}
 
                 <p
@@ -150,47 +153,47 @@ export default function Navbar() {
           <IconButton onClick={handleMenuOpen} sx={{ color: "#fff", p: 0.5 }}>
             <MenuIcon />
           </IconButton>
-      <Menu
-  anchorEl={anchorEl}
-  open={Boolean(anchorEl)}
-  onClose={handleMenuClose}
-  PaperProps={{
-    sx: {
-      bgcolor: "#0F0F0F",
-      width: "100%",
-      
-    },
-  }}
->
-  {pages.map((page) => (
-    <MenuItem
-      key={page}
-      selected={page === activePage}
-      onClick={() => handlePageClick(page)}
-      sx={{
-        
-        bgcolor: page === activePage ? "#fff" : "transparent",
-        color: page === activePage ? "#0F0F0F" : "#fff",
-        "&.Mui-selected": {
-          bgcolor: "#fff",
-          color: "#0F0F0F",
-        },
-        "&.Mui-selected:hover": {
-          bgcolor: "#fff",
-        },
-      }}
-    >
-      {activePage === page && (
-        <img
-          src={pageIcons[page]}
-          alt={`${page} icon`}
-          style={{ width: 18, marginRight: 8 }}
-        />
-      )}
-      {page}
-    </MenuItem>
-  ))}
-</Menu>
+          <Menu
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={handleMenuClose}
+            PaperProps={{
+              sx: {
+                bgcolor: "#0F0F0F",
+                width: "100%",
+
+              },
+            }}
+          >
+            {pages.map((page) => (
+              <MenuItem
+                key={page}
+                selected={page === activePage}
+                onClick={() => handlePageClick(page)}
+                sx={{
+
+                  bgcolor: page === activePage ? "#fff" : "transparent",
+                  color: page === activePage ? "#0F0F0F" : "#fff",
+                  "&.Mui-selected": {
+                    bgcolor: "#fff",
+                    color: "#0F0F0F",
+                  },
+                  "&.Mui-selected:hover": {
+                    bgcolor: "#fff",
+                  },
+                }}
+              >
+                {activePage === page && (
+                  <img
+                    src={pageIcons[page]}
+                    alt={`${page} icon`}
+                    style={{ width: 18, marginRight: 8 }}
+                  />
+                )}
+                {page}
+              </MenuItem>
+            ))}
+          </Menu>
 
         </div>
       </div>

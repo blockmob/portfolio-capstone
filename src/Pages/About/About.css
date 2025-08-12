@@ -78,3 +78,31 @@ margin: 0px !important;
     gap: 30px;
   }
 }
+
+
+@media (min-width: 1600px) {
+
+  .about-section-number{
+    font-size: 22.5px;
+  }
+  .aboutdiv{
+    gap: 18px;
+  }
+  .about-left{
+    gap: 186.86;
+  }
+  .about-left-text{
+    font-size: 24.75px;
+  }
+  .about-right-text-new{
+    font-size: 40.5px;
+  }
+  .about-section{
+    padding: 283.5px 106.88px 100px;
+    gap: 138.38px;
+  }
+  .about-line{
+        width: 93.9375px;
+    height: 1.69px;
+  }
+}
