@@ -70,7 +70,12 @@ export default function Navbar() {
         display: "flex",
         justifyContent: "center",
         alignItems: isMobile ? "end" : "center",
-        top: window.innerWidth < 500 ? "20px" : window.innerWidth > 1600 ? "36px" : "32px",
+        top:
+          window.innerWidth < 500
+            ? "20px"
+            : window.innerWidth > 1600
+            ? "36px"
+            : "32px",
         left: 0,
         width: "100%",
         zIndex: 1100,
@@ -87,6 +92,7 @@ export default function Navbar() {
           padding: "4px",
           position: "relative",
           overflow: "hidden",
+          minWidth: "fit-content",
         }}
         className="slidingdivtop"
       >
@@ -138,10 +144,16 @@ export default function Navbar() {
                 }}
               >
                 {activePage === page && (
-                  <img src={pageIcons[page]} alt={`${page} icon`} className="iconpage" />
+                  <img
+                    src={pageIcons[page]}
+                    alt={`${page} icon`}
+                    className="iconpage"
+                  />
                 )}
                 <p
-                  className={`FOntofnavbar ${activePage === page ? "active" : ""}`}
+                  className={`FOntofnavbar ${
+                    activePage === page ? "active" : ""
+                  }`}
                   style={{
                     color: activePage === page ? "#0F0F0F" : "#fff",
                   }}
@@ -185,7 +197,6 @@ export default function Navbar() {
                 bgcolor: "#0F0F0F",
                 width: "250px",
                 paddingTop: "30px",
-
               },
             }}
           >
