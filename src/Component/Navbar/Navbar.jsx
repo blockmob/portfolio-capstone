@@ -1,15 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import IconButton from "@mui/material/IconButton";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
+import Drawer from "@mui/material/Drawer";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
 import "./Navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 
-
 const pages = ["Home", "About", "Ventures", "Recognitions", "Contact"];
 
-// Map each page to its icon path
 const pageIcons = {
   Home: "/Images/Hero/Home.svg",
   About: "/Images/Hero/Home.svg",
@@ -19,28 +20,14 @@ const pageIcons = {
 };
 
 export default function Navbar() {
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   const [activePage, setActivePage] = useState("Home");
   const [highlightStyle, setHighlightStyle] = useState({});
   const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
   const itemRefs = useRef({});
 
   const handleScrollToSection = (page) => {
-
-
-    const targetId =
-      page === "Home"
-        ? "Home"
-        : page === "About"
-          ? "About"
-          : page === "Ventures"
-            ? "Ventures"
-            : page === "Recognitions"
-              ? "Recognitions"
-                 : page === "Contact"
-              ? "Contact"
-              : null;
-
+    const targetId = page;
     if (targetId) {
       const element = document.getElementById(targetId);
       if (element) {
@@ -49,29 +36,18 @@ export default function Navbar() {
     }
   };
 
-
-
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 900);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-  };
-
   const handlePageClick = (page) => {
     setActivePage(page);
-    handleMenuClose();
+    setDrawerOpen(false);
     handleScrollToSection(page);
   };
 
-  // Update highlight position whenever activePage changes
   useEffect(() => {
     const el = itemRefs.current[activePage];
     if (el) {
@@ -87,19 +63,17 @@ export default function Navbar() {
 
   return (
     <AppBar
-       position={window.innerWidth > 900 ? "fixed" : "relative"}
+      position={window.innerWidth > 900 ? "fixed" : "relative"}
       sx={{
         bgcolor: "transparent",
         boxShadow: "none",
         display: "flex",
         justifyContent: "center",
         alignItems: isMobile ? "end" : "center",
-        p: 0,
-        m: 0,
-        top: window.innerWidth > 1600 ? "36px" : "32px",
+        top: window.innerWidth < 500 ? "20px" : window.innerWidth > 1600 ? "36px" : "32px",
         left: 0,
-        width: "100%", // span full width
-        zIndex: 1100, // stay above other elements
+        width: "100%",
+        zIndex: 1100,
       }}
     >
       <div
@@ -121,7 +95,7 @@ export default function Navbar() {
           style={{
             position: "absolute",
             left: "4px",
-            backgroundColor: "#fff",
+            backgroundColor: isMobile ? "transparent" : "#FFFFFF",
             borderRadius: "100px",
             transition: "transform 0.3s ease, width 0.3s ease",
             ...highlightStyle,
@@ -163,11 +137,9 @@ export default function Navbar() {
                   gap: "8px",
                 }}
               >
-                {/* Only show icon if page is active */}
                 {activePage === page && (
                   <img src={pageIcons[page]} alt={`${page} icon`} className="iconpage" />
                 )}
-
                 <p
                   className={`FOntofnavbar ${activePage === page ? "active" : ""}`}
                   style={{
@@ -181,21 +153,21 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Drawer Button */}
         <div
           style={{
             display: isMobile ? "flex" : "none",
             alignItems: "center",
-            justifyContent: "flex-start", // align left
+            justifyContent: "flex-start",
             width: "100%",
             backgroundColor: "transparent",
           }}
         >
           <IconButton
-            onClick={handleMenuOpen}
+            onClick={() => setDrawerOpen(true)}
             sx={{
               backgroundColor: "transparent",
-              color: "#000", // black icon
+              color: "#000",
               padding: 0,
               "&:hover": { backgroundColor: "transparent" },
             }}
@@ -203,48 +175,48 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
 
-          <Menu
-            anchorEl={anchorEl}
-            open={Boolean(anchorEl)}
-            onClose={handleMenuClose}
+          {/* Right Drawer */}
+          <Drawer
+            anchor="right"
+            open={drawerOpen}
+            onClose={() => setDrawerOpen(false)}
             PaperProps={{
               sx: {
                 bgcolor: "#0F0F0F",
-                width: "100%",
+                width: "250px",
+                paddingTop: "30px",
 
               },
             }}
           >
-            {pages.map((page) => (
-              <MenuItem
-                key={page}
-                selected={page === activePage}
-                onClick={() => handlePageClick(page)}
-                sx={{
-                  gap: 1,
-                  bgcolor: page === activePage ? "#fff" : "transparent",
-                  color: page === activePage ? "#0F0F0F" : "#fff",
-                  "&.Mui-selected": {
-                    bgcolor: "#fff",
-                    color: "#0F0F0F",
-                  },
-                  "&.Mui-selected:hover": {
-                    bgcolor: "#fff",
-                  },
-                }}
-              >
-                {activePage === page && (
-                  <img
-                    src={pageIcons[page]}
-                    alt={`${page} icon`}
-                    style={{ width: 18, marginRight: 8 }}
-                  />
-                )}
-                {page}
-              </MenuItem>
-            ))}
-          </Menu>
-
+            <List>
+              {pages.map((page) => (
+                <ListItem key={page} disablePadding>
+                  <ListItemButton
+                    onClick={() => handlePageClick(page)}
+                    sx={{
+                      gap: 1,
+                      margin: "8px 0 !important",
+                      bgcolor: page === activePage ? "#fff" : "transparent",
+                      color: page === activePage ? "#0F0F0F" : "#fff",
+                      "&:hover": {
+                        bgcolor: page === activePage ? "#fff" : "#1a1a1a",
+                      },
+                    }}
+                  >
+                    {activePage === page && (
+                      <img
+                        src={pageIcons[page]}
+                        alt={`${page} icon`}
+                        style={{ width: 18, marginRight: 8 }}
+                      />
+                    )}
+                    <ListItemText primary={page} />
+                  </ListItemButton>
+                </ListItem>
+              ))}
+            </List>
+          </Drawer>
         </div>
       </div>
     </AppBar>
