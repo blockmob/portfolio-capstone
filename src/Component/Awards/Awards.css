@@ -123,6 +123,7 @@
 
 /* Responsive Design */
 @media (min-width: 1600px) {
+   
   .awards-number,
   .awards-subtitle {
     font-size: 22px;

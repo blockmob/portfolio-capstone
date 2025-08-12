@@ -221,6 +221,9 @@
 }
 
 @media (min-width: 1600px) {
+  .venture-block {
+    max-width: 468px;
+}
   .venture-quote {
     font-size: 16px;
   }
