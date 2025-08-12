@@ -101,20 +101,35 @@ const Mid_Cards = () => {
 
   return (
     <section className='mid-cards-section'>
-      {/* <div className='wrapppp'> */}
-        <div className='cards-viewport' ref={viewportRef}>
-          {cards.map((row, index) => (
-            <div
-              className='mid-card'
-              key={row.title}
-              ref={el => (cardRefs.current[index] = el)}
-            >
-              <img src={row.Icon} alt={row.title} className='icon-badge' />
-              <p className='card-title'>{row.title}</p>
-              <p className='card-description'>{row.description}</p>
-            </div>
-          ))}
+      <div className='fdhdsf'>
+        <div className='awards-label'>
+          <span className='awards-number'>02/</span>
+          <br />
+          <span className='awards-subtitle'>What i do</span>
         </div>
+        <p
+          className='innovation-header-description hdsdhfhdfhf'
+          style={{ fontFamily: 'Geist', color: '#0F0F0F' }}
+        >
+          With experience in my field, I can tackle challenges and provide
+          solutions. My skills enhance my problem-solving and make me a valuable
+          asset to any team.
+        </p>
+      </div>
+      {/* <div className='wrapppp'> */}
+      <div className='cards-viewport' ref={viewportRef}>
+        {cards.map((row, index) => (
+          <div
+            className='mid-card'
+            key={row.title}
+            ref={el => (cardRefs.current[index] = el)}
+          >
+            <img src={row.Icon} alt={row.title} className='icon-badge' />
+            <p className='card-title'>{row.title}</p>
+            <p className='card-description'>{row.description}</p>
+          </div>
+        ))}
+      </div>
       {/* </div> */}
 
       <div className='nav-controls'>
