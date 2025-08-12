@@ -8,15 +8,19 @@ import Hero from '../Hero/Hero'
 import About from '../About/About'
 const HomePage = () => {
   return (
-    <div style={{ width: "100%", background: "white", maxWidth: "1920px" }}>
+    <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
       <Hero />
-      <About />
-      <Mid_Cards />
-      <Innovation />
-      <Awards />
-      <JourneyBeyondWork />
+      <div style={{ width: "100%", background: "white", maxWidth: "1620px"  }} className='HomePageContainerNewwww'>
+        <About />
+        <Mid_Cards />
+        <Innovation />
+        <Awards />
+        <JourneyBeyondWork />
+
+      </div>
       <Faq />
     </div>
+
   )
 }
 

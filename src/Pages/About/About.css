@@ -99,6 +99,8 @@
   .about-section {
     padding: 283.5px 106.88px 100px;
     gap: 138.38px;
+    margin-right: auto !important;
+    margin-left: auto !important;
   }
 
   .about-line {

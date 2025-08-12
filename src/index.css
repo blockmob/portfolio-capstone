@@ -115,3 +115,9 @@ h1 {
   src: url('/public/Fonts/Geist-Regular.ttf') format('woff2');
   font-display: swap;
 }
+
+
+.HomePageContainerNewwww{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
