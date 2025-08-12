@@ -19,6 +19,7 @@ const Hero = () => {
               I dont just imagine a better future- I craft it.</p>
             <button className='lettalk'>
               Let’s Talk
+              <img src='/Images/Hero/arrow.svg' alt='arrow' className='arrowicon' />
             </button>
           </div>
 
