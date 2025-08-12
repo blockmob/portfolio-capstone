@@ -39,7 +39,7 @@ const Hero = () => {
           <p className='textyear'>© 2025</p>
         </div>
       </div>
-      <img src='/Images/Hero/AbdullahNew.webp' data-aos="zoom-in-up" data-aos-delay="100" className='MainPicPerson' alt='' />
+      <img src='/Images/Hero/AbudullahNewPic.webp' data-aos="zoom-in-up" data-aos-delay="100" className='MainPicPerson' alt='' />
       <img src='/Images/Hero/TitlePic.png'   className='titlePerson'  alt='' />
     </div>
   )
