@@ -81,7 +81,7 @@ const Footer = () => {
             <a href="https://x.com/abdullahmaksour?s=21" target="_blank" rel="noopener noreferrer">
               <img src="/Images/Faq/X.png" alt="faceBook" />
             </a>
-            <a href="https://www.linkedin.com/in/abdmak?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/abdmak/" target="_blank" rel="noopener noreferrer">
               <img src="/Images/Faq/linkedIn.png" alt="faceBook" />
             </a>
             <a href="https://www.instagram.com/abdullahmaksour?igsh=NGxrNmZheHNucHVy" target="_blank" rel="noopener noreferrer">
