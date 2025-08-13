@@ -485,7 +485,7 @@
   }
 
   .MainHeroDiv {
-    gap: 35px;
+    gap: 30px;
   }
 
   .textyear {
@@ -545,10 +545,7 @@
     margin-bottom: 240px !important;
   }
 
-  .textvis,
-  .valuetext {
-    font-size: 15px;
-  }
+  
 
   .card-section-bottom {
     gap: 10px;
@@ -578,6 +575,11 @@
   .learntext {
     max-width: unset;
   }
+  
+  .learntext,
+  .valuetextdet {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -600,7 +602,7 @@
     top: 277px;
   }
   .MainHeroDiv {
-    padding-top: 350px;
+    padding-top: 370px;
   }
 }
 
@@ -615,6 +617,6 @@
     top: 255px;
   }
   .MainHeroDiv {
-    padding-top: 320px;
+    padding-top: 350px;
   }
 }
