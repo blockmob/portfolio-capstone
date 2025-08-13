@@ -6,7 +6,18 @@
   background-size: 100% 100%;
   position: relative;
 }
-
+.herologo {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  z-index: 2;
+  width: 80px;
+  height: auto;
+  @media (max-width: 380px) {
+    bottom: 55%;
+  }
+}
 .card-section {
   margin-top: 46px !important;
   max-width: 260px;
@@ -599,9 +610,9 @@
   .titlePerson {
     top: 277px;
   }
-  .MainHeroDiv {
+  /* .MainHeroDiv {
     padding-top: 350px;
-  }
+  } */
 }
 
 @media (max-width: 350px) {
@@ -614,7 +625,7 @@
   .titlePerson {
     top: 255px;
   }
-  .MainHeroDiv {
+  /* .MainHeroDiv {
     padding-top: 320px;
-  }
+  } */
 }

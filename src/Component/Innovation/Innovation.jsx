@@ -36,7 +36,7 @@ const Innovation = () => {
             <div className='innovation-header-left'
             data-aos="fade-left"
             >
-              <span className='innovation-section-number'>04/</span>
+              <span className='innovation-section-number'>03/</span>
               <br />
               <span className='innovation-section-title'>VENTURES</span>
               <p className='innovation-main-title'>

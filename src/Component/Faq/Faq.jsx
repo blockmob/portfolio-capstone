@@ -38,7 +38,7 @@ const Faq = () => {
       <div className="MainContainerFaq">
         <div className="Faq-left-container" data-aos="fade-right">
           <div className="aboutdiv">
-            <p className="about-section-number">08/</p>
+            <p className="about-section-number">06/</p>
             <p className="about-section-number">FaQ</p>
           </div>
           <p className="awards-title  fadshfdhsfh">

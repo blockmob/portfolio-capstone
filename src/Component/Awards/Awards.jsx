@@ -6,7 +6,7 @@ const Awards = () => {
     <div className='awards-container' id='Recognitions'>
       <div className='awards-header' data-aos="fade-down">
         <div className="aboutdiv" >
-          <p className="about-section-number">05/</p>
+          <p className="about-section-number">04/</p>
           <p className="about-section-number">Recognitions</p>
         </div>
         <p className='awards-title'>

@@ -77,10 +77,16 @@ const Footer = () => {
             className="Footer-Logo"
           />
           <div className="Social-Platform" >
-            <img src="/Images/Faq/facebook.png" alt="faceBook" />
-            <img src="/Images/Faq/X.png" alt="faceBook" />
-            <img src="/Images/Faq/linkedIn.png" alt="faceBook" />
-            <img src="/Images/Faq/insta.png" alt="faceBook" />
+            {/* <img src="/Images/Faq/facebook.png" alt="faceBook" /> */}
+            <a href="https://x.com/abdullahmaksour?s=21" target="_blank" rel="noopener noreferrer">
+              <img src="/Images/Faq/X.png" alt="faceBook" />
+            </a>
+            <a href="https://www.linkedin.com/in/abdmak?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+              <img src="/Images/Faq/linkedIn.png" alt="faceBook" />
+            </a>
+            <a href="https://www.instagram.com/abdullahmaksour?igsh=NGxrNmZheHNucHVy" target="_blank" rel="noopener noreferrer">
+              <img src="/Images/Faq/insta.png" alt="faceBook" />
+            </a>
           </div>
         </div>
       </div>

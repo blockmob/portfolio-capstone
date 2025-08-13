@@ -11,7 +11,7 @@ const JourneyBeyondWork = () => {
         >
           <p className="about-section-number"
           style={{color:"#FFFFFF"}}
-          >07/</p>
+          >05/</p>
           <p className="about-section-number"
               style={{color:"#FFFFFF"}}>Beyond work</p>
         </div>
