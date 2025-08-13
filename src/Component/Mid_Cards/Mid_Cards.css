@@ -261,12 +261,12 @@
   }
 
   .card-title {
-    font-size: 14px;
+    font-size: 15px;
   }
 
-  .card-description {
+  /* .card-description {
     font-size: 12px;
-  }
+  } */
 
   .cards-viewport {
     gap: 15px;
