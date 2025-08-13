@@ -496,7 +496,7 @@
   }
 
   .MainHeroDiv {
-    gap: 35px;
+    gap: 30px;
   }
 
   .textyear {
@@ -556,10 +556,7 @@
     margin-bottom: 240px !important;
   }
 
-  .textvis,
-  .valuetext {
-    font-size: 15px;
-  }
+  
 
   .card-section-bottom {
     gap: 10px;
@@ -588,6 +585,11 @@
   }
   .learntext {
     max-width: unset;
+  }
+  
+  .learntext,
+  .valuetextdet {
+    font-size: 13px;
   }
 }
 

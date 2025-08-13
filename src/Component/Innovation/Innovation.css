@@ -263,6 +263,9 @@
   .venture-description {
     font-size: 18px;
   }
+  .venture-features{
+    font-size: 18px;
+  }
   .homeimage {
     width: 622.125px;
     height: 538.875px;
@@ -287,6 +290,9 @@
     font-size: 18.5px;
   }
   .venture-description {
+    font-size: 14px;
+  }
+  .venture-features{
     font-size: 14px;
   }
   .homeimage {
@@ -325,6 +331,9 @@
     font-size: 16.5px;
   }
   .venture-description {
+    font-size: 12px;
+  }
+  .venture-features{
     font-size: 12px;
   }
   .homeimage {
@@ -402,7 +411,7 @@
     gap: 30px;
 }
   .venture-quote {
-    font-size: 11px;
+    font-size: 13px;
   }
   .innovation-left-column {
     gap: 35px;
@@ -420,14 +429,17 @@
     margin: 30px 0px 0px 0px !important;
   }
   .innovation-header-description {
-    font-size: 12.25px;
+    font-size: 13px;
     line-height: 19px;
   }
   .venture-block h2 {
     font-size: 14.5px;
   }
   .venture-description {
-    font-size: 11px;
+    font-size: 13px;
+  }
+  .venture-features{
+    font-size: 13px;
   }
   .homeimage {
     max-width: 277px;
@@ -444,7 +456,7 @@
 }
 @media (max-width: 399px) {
   .venture-quote {
-    font-size: 10px;
+    font-size: 12px;
   }
   .innovation-content,
   .innovation-left-column {

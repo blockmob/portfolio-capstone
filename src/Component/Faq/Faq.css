@@ -91,6 +91,13 @@
   gap: 24px;
   cursor: pointer;
 }
+.perFaqContainer:focus,
+.perFaqContainer:active {
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+
 
 .Faq-question-top-arrow {
   display: flex;
@@ -271,7 +278,7 @@
   }
 
   .Faq-Answer {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 

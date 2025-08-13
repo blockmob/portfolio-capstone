@@ -142,12 +142,12 @@
     padding-right: 15px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 440px) {
   .BeyondWorkBottomContainer h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
   .BeyondWorkBottomContainer p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .BeyondWorkOriginalSection {
     font-size: 12px;
