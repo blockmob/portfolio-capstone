@@ -263,6 +263,9 @@
   .venture-description {
     font-size: 18px;
   }
+  .venture-features{
+    font-size: 18px;
+  }
   .homeimage {
     width: 622.125px;
     height: 538.875px;
@@ -287,6 +290,9 @@
     font-size: 18.5px;
   }
   .venture-description {
+    font-size: 14px;
+  }
+  .venture-features{
     font-size: 14px;
   }
   .homeimage {
@@ -325,6 +331,9 @@
     font-size: 16.5px;
   }
   .venture-description {
+    font-size: 12px;
+  }
+  .venture-features{
     font-size: 12px;
   }
   .homeimage {
@@ -427,6 +436,9 @@
     font-size: 14.5px;
   }
   .venture-description {
+    font-size: 11px;
+  }
+  .venture-features{
     font-size: 11px;
   }
   .homeimage {
