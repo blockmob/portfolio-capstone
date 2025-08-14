@@ -77,7 +77,9 @@ const Footer = () => {
             className="Footer-Logo"
           />
           <div className="Social-Platform" >
-            {/* <img src="/Images/Faq/facebook.png" alt="faceBook" /> */}
+            <a href="mailto:abdullah.m@capstonetg.io" aria-label="Email to abdullah.m@capstonetg.io">
+              <img src="/Images/Faq/email.png" alt="email" />
+            </a>
             <a href="https://x.com/abdullahmaksour?s=21" target="_blank" rel="noopener noreferrer">
               <img src="/Images/Faq/X.png" alt="faceBook" />
             </a>
