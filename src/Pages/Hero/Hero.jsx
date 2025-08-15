@@ -73,7 +73,7 @@ const Hero = () => {
         <img
           src="/Images/Hero/AbudullahNewPic.webp"
           data-aos="zoom-in-up"
-          data-aos-delay="50"
+          data-aos-delay="30"
           className="MainPicPerson"
           alt=""
         />
