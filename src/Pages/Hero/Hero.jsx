@@ -64,17 +64,13 @@ const Hero = () => {
       {isMobile ? (
         <img
           src="/Images/Hero/hhhuhuhu.webp"
-          data-aos="zoom-in-up"
-          data-aos-delay="100"
-          className="MainPicPerson"
+          className="MainPicPerson animate-on-load"
           alt=""
         />
       ) : (
         <img
           src="/Images/Hero/AbudullahNewPic.webp"
-          data-aos="zoom-in-up"
-          data-aos-delay="30"
-          className="MainPicPerson"
+          className="MainPicPerson animate-on-load"
           alt=""
         />
       )}

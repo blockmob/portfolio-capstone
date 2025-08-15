@@ -39,6 +39,23 @@
   z-index: 2 !important;
 }
 
+.animate-on-load {
+  animation: zoomInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateX(-50%) scale(0.8) translateY(50px);
+}
+
+@keyframes zoomInUp {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.8) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1) translateY(0);
+  }
+}
+
 .titlePerson {
   z-index: 1;
   width: 100%;
